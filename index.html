@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BARTS · Behavioral Analytics & Research for Transportation Systems</title>
+  <meta name="description" content="BARTS Lab, Korea University — travel behavior, discrete choice modeling, and data-driven transportation research. 고려대학교 김성후 교수 연구실.">
+  <meta property="og:title" content="BARTS · Behavioral Analytics & Research for Transportation Systems">
+  <meta property="og:description" content="Korea University · Travel behavior & transportation analytics lab">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1b36'/%3E%3Cpath d='M10 44h44' stroke='%23f2a541' stroke-width='5' stroke-linecap='round'/%3E%3Crect x='14' y='22' width='36' height='16' rx='5' fill='%23dfe5ee'/%3E%3Crect x='14' y='32' width='36' height='3' fill='%232f5bd3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Noto+Sans+KR:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="BARTS home">
+        <span class="brand-mark" data-bind="lab.short">BARTS</span>
+        <span class="brand-sub">Behavioral Analytics &amp; Research<br>for Transportation Systems</span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="#about" data-i18n="about">About</a>
+        <a href="#research" data-i18n="research">Research</a>
+        <a href="#people" data-i18n="people">People</a>
+        <a href="#publications" data-i18n="publications">Publications</a>
+        <a href="#news" data-i18n="news">News</a>
+        <a href="#gallery" data-i18n="gallery" class="nav-gallery">Gallery</a>
+        <a href="#contact" data-i18n="contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang" role="group" aria-label="Language">
+          <button data-lang="ko">KO</button><span>/</span><button data-lang="en">EN</button>
+        </div>
+        <a class="btn btn-primary btn-sm" href="#join" data-i18n="joinBtn">Join BARTS</a>
+        <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="BARTS">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content wrap">
+      <p class="hero-kicker" data-bind="lab.affiliation"></p>
+      <h1>Behavioral Analytics &amp; Research<br>for Transportation Systems</h1>
+      <p class="hero-tag" data-bind="hero.tagline"></p>
+      <div class="hero-cta">
+        <a class="btn btn-light" href="#research" data-i18n="research">Research</a>
+        <a class="btn btn-ghost" href="#publications" data-i18n="publications">Publications</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- 01 About -->
+    <section class="section" id="about">
+      <div class="wrap grid-2">
+        <div>
+          <p class="eyebrow"><span>01</span> About</p>
+          <h2 data-bind="about.title"></h2>
+        </div>
+        <div>
+          <p class="lead" data-bind="about.body"></p>
+          <blockquote class="recruit-quote">
+            <p data-bind="about.highlight"></p>
+            <footer><span data-bind="about.highlight_sub"></span> <a class="q-mail" href="#"></a></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 Research -->
+    <section class="section alt" id="research">
+      <div class="wrap">
+        <p class="eyebrow"><span>02</span> Research</p>
+        <h2 data-i18n="researchTitle">Research areas</h2>
+        <div class="cards" id="research-list"></div>
+      </div>
+    </section>
+
+    <!-- 03 People -->
+    <section class="section" id="people">
+      <div class="wrap">
+        <p class="eyebrow"><span>03</span> People</p>
+        <h2 data-i18n="peopleTitle">People</h2>
+        <nav class="people-tabs" id="people-tabs" aria-label="People groups"></nav>
+        <div id="pi"></div>
+        <div id="groups"></div>
+      </div>
+    </section>
+
+    <!-- 04 Publications -->
+    <section class="section alt" id="publications">
+      <div class="wrap">
+        <p class="eyebrow"><span>04</span> Publications</p>
+        <div class="pub-head">
+          <div><h2 data-i18n="pubTitle">Publications</h2><p class="pub-count" id="pub-count"></p></div>
+          <div class="pub-tools">
+            <div class="seg" id="pub-filter">
+              <button data-f="all" class="on" data-i18n="all">All</button>
+              <button data-f="journal" data-i18n="journal">Journal</button>
+              <button data-f="chapters" data-i18n="chapters">Book chapters</button>
+            </div>
+            <input type="search" id="pub-search" placeholder="Search title, author, journal…" aria-label="Search publications">
+          </div>
+        </div>
+        <p class="note" data-i18n="corrNote">* Corresponding author</p>
+        <div id="pub-list"></div>
+      </div>
+    </section>
+
+    <!-- 05 News -->
+    <section class="section" id="news">
+      <div class="wrap">
+        <p class="eyebrow"><span>05</span> News</p>
+        <div class="pub-head">
+          <h2 data-i18n="newsTitle">News</h2>
+          <div class="seg" id="news-filter"></div>
+        </div>
+        <div id="news-list"></div>
+        <button class="btn btn-outline" id="news-more" hidden data-i18n="allNews">All news</button>
+      </div>
+    </section>
+
+    <!-- 06 Gallery (소식의 사진 + gallery.yml 사진, 자동으로 숨김/표시) -->
+    <section class="section alt" id="gallery" hidden>
+      <div class="wrap">
+        <p class="eyebrow"><span>06</span> Gallery</p>
+        <h2 data-i18n="gallery">Gallery</h2>
+        <div class="gallery" id="gallery-list"></div>
+      </div>
+    </section>
+
+    <!-- Join -->
+    <section class="join" id="join">
+      <div class="wrap grid-2">
+        <div>
+          <p class="eyebrow light">Join BARTS</p>
+          <h2 data-bind="join.title"></h2>
+          <p data-bind="join.body"></p>
+        </div>
+        <div>
+          <ul class="positions" id="positions"></ul>
+          <a class="btn btn-amber" id="join-mail" href="#"><span data-i18n="emailUs">Email us</span> →</a>
+          <p class="mail-text" id="join-mail-text"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="wrap foot-grid">
+      <div>
+        <p class="brand-mark sm">BARTS</p>
+        <p class="muted">Behavioral Analytics &amp; Research for Transportation Systems</p>
+      </div>
+      <div>
+        <p class="foot-h" data-i18n="contact">Contact</p>
+        <p data-bind="lab.affiliation"></p>
+        <p data-bind="lab.address"></p>
+        <p><a id="foot-mail" href="#"></a></p>
+      </div>
+      <div>
+        <p class="foot-h">Menu</p>
+        <p class="foot-links">
+          <a href="#research" data-i18n="research">Research</a>
+          <a href="#people" data-i18n="people">People</a>
+          <a href="#publications" data-i18n="publications">Publications</a>
+          <a href="#news" data-i18n="news">News</a>
+        </p>
+      </div>
+    </div>
+    <div class="wrap copy">© <span id="year"></span> BARTS Lab · Korea University</div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true">
+    <button class="lb-close" aria-label="Close">×</button>
+    <img alt=""><p></p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script src="assets/hero.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
