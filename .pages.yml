@@ -159,6 +159,7 @@ content:
               values:
                 - { value: Postdoc, label: "박사후연구원" }
                 - { value: PhD, label: "박사과정" }
+                - { value: Integrated, label: "석박통합과정" }
                 - { value: MS, label: "석사과정" }
                 - { value: Intern, label: "학부연구생" }
                 - { value: Staff, label: "연구원·행정" }
@@ -171,6 +172,28 @@ content:
           - name: email
             label: "이메일"
             type: string
+          - name: links
+            label: "링크 버튼 (LinkedIn, Google Scholar 등)"
+            description: "종류를 고르고 주소를 넣으면 아이콘 버튼이 생깁니다."
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.kind} · {fields.url}"
+            fields:
+              - name: kind
+                label: "종류"
+                type: select
+                options:
+                  values:
+                    - { value: linkedin, label: "LinkedIn" }
+                    - { value: scholar, label: "Google Scholar" }
+                    - { value: github, label: "GitHub" }
+                    - { value: homepage, label: "개인 홈페이지" }
+                    - { value: cv, label: "CV" }
+                    - { value: other, label: "기타" }
+              - { name: url, label: "주소 (https://...)", type: string }
+              - { name: label, label: "버튼 이름 (기타일 때만, 선택)", type: string }
       - name: alumni
         label: "졸업생"
         type: object
@@ -195,6 +218,29 @@ content:
           - name: now
             label: "현재 소속"
             type: string
+          - { name: email, label: "이메일", type: string }
+          - name: links
+            label: "링크 버튼 (LinkedIn, Google Scholar 등)"
+            description: "종류를 고르고 주소를 넣으면 아이콘 버튼이 생깁니다."
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.kind} · {fields.url}"
+            fields:
+              - name: kind
+                label: "종류"
+                type: select
+                options:
+                  values:
+                    - { value: linkedin, label: "LinkedIn" }
+                    - { value: scholar, label: "Google Scholar" }
+                    - { value: github, label: "GitHub" }
+                    - { value: homepage, label: "개인 홈페이지" }
+                    - { value: cv, label: "CV" }
+                    - { value: other, label: "기타" }
+              - { name: url, label: "주소 (https://...)", type: string }
+              - { name: label, label: "버튼 이름 (기타일 때만, 선택)", type: string }
       - name: professor
         label: "지도교수"
         type: object
