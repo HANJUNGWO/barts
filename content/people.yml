@@ -1,0 +1,66 @@
+# =====================================================================
+#  구성원 정보
+#  - 사진: images 폴더에 올리고 photo: "images/파일이름.jpg"
+#    (사진이 없으면 이니셜이 자동으로 표시됩니다)
+#  - 연구원은 role 값에 따라 자동으로 묶여서 표시됩니다:
+#      "Postdoc" = 박사후연구원 / "PhD" = 박사과정 / "MS" = 석사과정
+#      "Intern" = 학부연구생   / "Staff" = 연구원·행정
+#  - 같은 그룹 안에서는 적은 순서대로 표시됩니다
+# =====================================================================
+
+professor:
+  name: { ko: "김성후", en: "Sung Hoo Kim" }
+  title: { ko: "조교수", en: "Assistant Professor" }
+  photo: ""          # 예: "images/sunghoo.jpg"
+  email: "sunghoo@korea.ac.kr"
+  links:
+    - { label: "Google Scholar", url: "" }   # 주소를 넣으면 버튼이 나타납니다
+    - { label: "CV", url: "" }
+  education:
+    - "Ph.D. in Civil and Environmental Engineering (Transportation), Georgia Institute of Technology, 2021"
+    - "M.S. in Urban Planning & Engineering, Yonsei University, 2016"
+    - "B.S. in Urban Planning & Engineering, Yonsei University, 2014"
+  career:
+    - "Assistant Professor, School of Civil, Environmental and Architectural Engineering, Korea University"
+    - "Assistant Professor, Department of Transportation & Logistics Engineering, Hanyang University (ERICA)"
+    - "Postdoctoral Fellow, Civil and Environmental Engineering, Georgia Institute of Technology"
+    - "Research Assistant, Civil and Environmental Engineering, Georgia Institute of Technology"
+    - "Research Assistant, Urban Planning & Engineering, Yonsei University"
+  service:
+    - "Editorial Board Member, Travel Behaviour and Society"
+    - "Guest Editor, Transportation Research Part D (special issue)"
+    - "Guest Editor, Multimodal Transportation (special issue)"
+  awards:
+    - "Early Career Scientist Award, Korean Society for Railway (2026)"
+    - "Best Paper Award, TRB Annual Meeting (2024)"
+    - "President's Fellowship, Georgia Tech (2016–2020)"
+    - "Kwanjeong Graduate Student Scholarship (2014–2016)"
+    - "National Science and Engineering Scholarship (2008–2014)"
+    - "Young Engineers' Honor Society (YEHS), National Academy of Engineering of Korea"
+  committee:   # 학위논문 심사위원 (M.S./Ph.D.)
+    - "Korea University"
+    - "Yonsei University"
+    - "Hanyang University"
+    - "University of Seoul"
+    - "KAIST"
+    - "University of New South Wales"
+
+# ---------------------------------------------------------------------
+# 연구원: 아래 예시를 복사해서 이름만 바꾸세요 (맨 앞 # 를 지우면 활성화)
+# ---------------------------------------------------------------------
+members: []
+  # - name: { ko: "홍길동", en: "Gildong Hong" }
+  #   role: "PhD"
+  #   photo: "images/gildong.jpg"
+  #   interests: "Travel demand forecasting, discrete choice"
+  #   email: "gildong@korea.ac.kr"
+  #
+  # - name: { ko: "김철수", en: "Chulsoo Kim" }
+  #   role: "MS"
+  #   interests: "Shared micromobility"
+
+# 졸업생
+alumni: []
+  # - name: { ko: "홍길동", en: "Gildong Hong" }
+  #   degree: "M.S. 2025"
+  #   now: "Korea Transport Institute"

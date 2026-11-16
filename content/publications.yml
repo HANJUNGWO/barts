@@ -1,0 +1,165 @@
+# =====================================================================
+#  논문 목록 (최신 논문을 맨 위에 추가하세요)
+#  - 제목에 : 이 들어가도 되도록 모든 값은 "따옴표" 안에 쓰세요
+#  - 교신저자는 이름 뒤에 * 표시
+#  - link: DOI 주소 (https://doi.org/...) — 없으면 "" 로 두기
+#  - "Sung Hoo Kim" 이름은 자동으로 굵게 표시됩니다
+# =====================================================================
+
+journal:
+  - year: 2026
+    authors: "Kim, Sung Hoo*; Hong Jae Kim; Ki Hyun Kim"
+    title: "An empirical study of underground toll-lane choice behavior and its temporal variations using revealed preference data"
+    venue: "Transportation"
+    link: ""
+
+  - year: 2026
+    authors: "Diao, Mi; Yi Zhu*; Scott Hardman; Sung Hoo Kim"
+    title: "Evolving connections between land use and emerging mobilities"
+    venue: "Transportation Research Part D: Transport and Environment"
+    link: ""
+
+  - year: 2026
+    authors: "Yoo, Sunbin; Junya Kumagai; Longfei Zheng*; Sung Hoo Kim; Paul Jung; Zheng Chang"
+    title: "High-speed rail, expressways, and revitalization after the Great East Japan Earthquake"
+    venue: "Transportation Research Part A: Policy and Practice"
+    link: ""
+
+  - year: 2026
+    authors: "Kim, Sung Hoo*; Xinyi Wang; Patricia Mokhtarian"
+    title: "Quantifying aggregate-level telework occasions and their impacts on vehicle-miles traveled in the US"
+    venue: "Technological Forecasting and Social Change"
+    link: ""
+
+  - year: 2026
+    authors: "Yoo, Sunbin; Junya Kumagai*; Sung Hoo Kim; Shunsuke Managi"
+    title: "Shared e-mopeds and equity implications: Insights from trip-level data in Fukuoka, Japan"
+    venue: "Journal of Transport Geography"
+    link: ""
+
+  - year: 2025
+    authors: "Chae, Kyung Soo; Sung Hoo Kim*; Xiang Yan"
+    title: "Exploring attitudinal group differences in preferences for shared e-scooter use and its integration with public transit"
+    venue: "Transportation Research Part A: Policy and Practice"
+    link: ""
+
+  - year: 2025
+    authors: "Kim, Hongjae; Ui Hyeon Jeong; Sung Hoo Kim*"
+    title: "How do directed and undirected travel differ? Evidence from year-long bikeshare trips"
+    venue: "Transportation Research Part D: Transport and Environment"
+    link: ""
+
+  - year: 2024
+    authors: "Kim, Sung Hoo*; Patricia Mokhtarian"
+    title: "Latent class models with an error structure: Investigating potential unobserved associations between latent segmentation and behavior generation"
+    venue: "Journal of Choice Modelling"
+    link: ""
+
+  - year: 2024
+    authors: "Kim, Sung Hoo*; Patricia Mokhtarian"
+    title: "A note on the sample selection (switching regression) model and treatment effects for a log-transformed outcome variable, in the context of residential self-selection"
+    venue: "Transportation"
+    link: ""
+
+  - year: 2024
+    authors: "Wang, Xinyi*; Sung Hoo Kim; Patricia Mokhtarian"
+    title: "Identifying Teleworking-Related motives and comparing telework frequency expectations in the Post-Pandemic World: A latent class choice modeling approach"
+    venue: "Transportation Research Part A: Policy and Practice"
+    link: ""
+
+  - year: 2023
+    authors: "Kim, Sung Hoo*"
+    title: "How heterogeneity has been examined in transportation safety analysis: A review of latent class modeling applications"
+    venue: "Analytic Methods in Accident Research"
+    link: ""
+
+  - year: 2023
+    authors: "Wang, Xinyi*; Sung Hoo Kim; Patricia Mokhtarian"
+    title: "Teleworking behavior pre-, during, and expected post-COVID: Identification and empirical description of trajectory types"
+    venue: "Travel Behaviour and Society"
+    link: ""
+
+  - year: 2023
+    authors: "Kim, Sung Hoo*; Patricia Mokhtarian"
+    title: "Finite mixture (or latent class) modeling in transportation: Trends, usage, potential, and future directions"
+    venue: "Transportation Research Part B: Methodological"
+    link: ""
+
+  - year: 2023
+    authors: "Kim, Sung Hoo*; Patricia Mokhtarian"
+    title: "Comparisons of observed and unobserved parameter heterogeneity in modeling vehicle-miles driven"
+    venue: "Transportation Research Part A: Policy and Practice"
+    link: ""
+
+  - year: 2022
+    authors: "Kim, Sung Hoo*; Patricia Mokhtarian; Sangho Choo; Giovanni Circella"
+    title: "Exploring Heterogeneous Structural Relationships Between E-Shopping, Local Accessibility, and Car-Based Travel: An Application of Enriched National Household Travel Survey Add-on Data"
+    venue: "Transportation Research Record: Journal of the Transportation Research Board"
+    link: ""
+
+  - year: 2021
+    authors: "Kim, Sung Hoo*; Patricia Mokhtarian"
+    title: "Who (never) makes overnight leisure trips? Disentangling structurally zero trips from usual trip generation processes"
+    venue: "Travel Behaviour and Society"
+    link: ""
+
+  - year: 2020
+    authors: "Kim, Sung Hoo*; Patricia Mokhtarian; Giovanni Circella"
+    title: "Will autonomous vehicles change residential location and vehicle ownership? Glimpses from Georgia"
+    venue: "Transportation Research Part D: Transport and Environment"
+    link: ""
+
+  - year: 2020
+    authors: "Kim, Sung Hoo*; Patricia Mokhtarian; Giovanni Circella"
+    title: "How, and for whom, will activity patterns be modified by self-driving cars? Expectations from the state of Georgia"
+    venue: "Transportation Research Part F: Psychology and Behaviour"
+    link: ""
+
+  - year: 2019
+    authors: "Kim, Sung Hoo*; Giovanni Circella; Patricia Mokhtarian"
+    title: "Identifying Latent Mode-use Propensity Segments in an All-AV Era"
+    venue: "Transportation Research Part A: Policy and Practice"
+    link: ""
+
+  - year: 2019
+    authors: "Wang, Xinyi; Sung Hoo Kim*"
+    title: "Prediction and Factor Identification for Crash Severity: Comparison of Discrete Choice and Tree-based Models"
+    venue: "Transportation Research Record: Journal of the Transportation Research Board"
+    link: ""
+
+  - year: 2018
+    authors: "Kim, Sung Hoo; Patricia Mokhtarian*"
+    title: "Taste heterogeneity as an alternative form of endogeneity bias: Investigating the attitude-moderated effects of built environment and socio-demographics on vehicle ownership using latent class modeling"
+    venue: "Transportation Research Part A: Policy and Practice"
+    link: ""
+
+  - year: 2018
+    authors: "Kim, Sung Hoo; Jin-Hyuk Chung*"
+    title: "Exploration on origin–destination-based travel time variability: Insights from Seoul metropolitan area"
+    venue: "Journal of Transport Geography"
+    link: ""
+
+  - year: 2017
+    authors: "Kim, Sung Hoo; Jin-Hyuk Chung*; Sunyoung Park; Keechoo Choi"
+    title: "Analysis of user satisfaction to promote public transportation: A pattern-recognition approach focusing on out-of-vehicle time"
+    venue: "International Journal of Sustainable Transportation"
+    link: ""
+
+  - year: 2016
+    authors: "Kim, Sung Hoo; Jin-Hyuk Chung*"
+    title: "Reinterpretation of the Likert Scale for Public Transportation User Satisfaction: A Pattern Recognition Approach"
+    venue: "Transportation Research Record: Journal of the Transportation Research Board"
+    link: ""
+
+chapters:
+  - year: 2025
+    authors: "Kim, Sung Hoo; Giancarlos Parady"
+    title: "Autonomous vehicles and travel behavior"
+    venue: "The International Encyclopedia of Geography"
+    link: ""
+
+  - year: 2024
+    authors: "Kim, Sung Hoo; Patricia L. Mokhtarian"
+    title: "The State of Travel Behavior Research: A Bibliometric Assessment"
+    venue: "Chapter 4 in D. Potoglou and J. Spinney (eds.), Handbook of Travel Behaviour, Edward Elgar Publishing"
+    link: ""

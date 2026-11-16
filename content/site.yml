@@ -1,0 +1,82 @@
+# =====================================================================
+#  BARTS 홈페이지 기본 정보
+#  - 따옴표("...") 안의 글자만 고치면 됩니다.
+#  - ko: 한국어 / en: 영어. 한쪽만 써도 됩니다 (없으면 다른 쪽이 표시됨).
+#  - 줄 맨 앞 띄어쓰기(들여쓰기)는 그대로 유지해 주세요.
+# =====================================================================
+
+lab:
+  short: "BARTS"
+  name: "Behavioral Analytics & Research for Transportation Systems"
+  affiliation:
+    ko: "고려대학교 건축사회환경공학부"
+    en: "School of Civil, Environmental and Architectural Engineering, Korea University"
+  email: "sunghoo@korea.ac.kr"
+  address:
+    ko: "서울특별시 성북구 안암로 145, 고려대학교"
+    en: "Korea University, 145 Anam-ro, Seongbuk-gu, Seoul, Korea"
+
+hero:
+  tagline:
+    ko: "개인의 통행행태부터 도시 전체의 이동 패턴까지, 데이터로 이해하고 예측합니다."
+    en: "From individual travel behavior to city-scale mobility patterns — understood and predicted with data."
+
+about:
+  title:
+    ko: "BARTS 연구실을 소개합니다"
+    en: "Welcome to BARTS"
+  body:
+    ko: >-
+      BARTS 연구실은 개인 수준의 통행행태(인간 이동성)와 집계 수준의 교통 패턴을 연구합니다.
+      개인의 선택과 이동 동태를 더 정확하게 예측하고, 데이터에 기반한 교통 의사결정을 지원하는 것을 목표로 합니다.
+    en: >-
+      The BARTS lab studies travel behavior (human mobility) at the individual level and
+      transportation patterns at the aggregate level. We aim to improve predictions of individual
+      choices and mobility dynamics, and to support data-driven decision making —
+      ultimately, to advance the scientific understanding of travel behavior.
+  # 소개 아래 크게 강조되는 문구 (빨간 기울임체)
+  highlight:
+    ko: "교통 연구에 관심있는 우수하고 자기주도적인 학부연구인턴, 석사과정생, 박사과정생, 박사후연구원을 모집합니다."
+    en: "We are looking for self-motivated prospective undergraduate research interns, M.S. students, Ph.D. students, and postdoctoral researchers interested in transportation research."
+  highlight_sub:
+    ko: "이메일로 편하게 연락 주세요!"
+    en: "Please feel free to contact us via email!"
+
+# 연구 분야: 항목을 추가/삭제/순서변경 하면 홈페이지에 그대로 반영됩니다.
+research:
+  - title: { ko: "통행행태 모델링", en: "Travel Behavior Modeling" }
+    body:
+      ko: "현실적인 통행행태 표현을 위한 모형을 개발·적용하고, 심리적 요인이 인간의 의사결정에 미치는 영향을 탐구합니다."
+      en: "Developing and applying models for realistic representation of travel behavior, and exploring how psychological factors shape human decision-making."
+    tags: ["Discrete choice", "Latent class", "Attitudes", "Heterogeneity"]
+
+  - title: { ko: "선택모형 × 머신러닝", en: "Choice Models × Machine Learning" }
+    body:
+      ko: "머신러닝·딥러닝 기법으로 이산선택모형을 발전시키고, 이론 기반과 데이터 기반 접근을 통합한 정확한 수요예측 방법론을 개발합니다."
+      en: "Advancing discrete choice models with machine/deep learning, and integrating theory-driven and data-driven approaches for accurate travel demand forecasting."
+    tags: ["Deep learning", "Demand forecasting", "Theory + data"]
+
+  - title: { ko: "신교통수단과 정책", en: "Emerging Mobility & Policy" }
+    body:
+      ko: "공유 모빌리티·자율주행 등 새로운 이동수단과 행태 변화의 영향을 분석하고, 교통정책 효과와 인프라 계획의 타당성을 평가합니다."
+      en: "Examining the impacts of emerging mobility options and behavioral change, assessing transport policies, and running simulations and feasibility assessments for infrastructure planning."
+    tags: ["Shared micromobility", "Autonomous vehicles", "Telework", "Policy evaluation"]
+
+  - title: { ko: "도시 모빌리티 데이터 분석", en: "Urban Mobility Analytics" }
+    body:
+      ko: "대도시의 대규모 이동 데이터를 분석하고, 대중교통 네트워크와 노선, 교통과 토지이용(도시공간)의 상호작용을 연구합니다. 능동·수동 데이터를 결합합니다."
+      en: "Applying data analytics to large-scale urban mobility, analyzing transit networks and routes, and studying interactions between transportation and land use — combining active and passive data."
+    tags: ["Big data", "Public transit", "Land use", "Smart card / GPS"]
+
+join:
+  title:
+    ko: "함께 연구할 사람을 찾습니다"
+    en: "Join BARTS"
+  body:
+    ko: "교통 연구에 관심 있는 자기주도적인 학부연구생, 석사·박사과정생, 박사후연구원을 모집합니다. 관심 있으신 분은 이메일로 편하게 연락 주세요."
+    en: "We are looking for self-motivated undergraduate research interns, M.S. and Ph.D. students interested in transportation research. Feel free to reach out by email."
+  positions:
+    - { ko: "박사후연구원", en: "Postdoctoral researcher" }
+    - { ko: "박사과정", en: "Ph.D. student" }
+    - { ko: "석사과정", en: "M.S. student" }
+    - { ko: "학부연구생", en: "Undergraduate intern" }
