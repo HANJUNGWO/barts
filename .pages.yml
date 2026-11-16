@@ -48,13 +48,15 @@ content:
       - name: body
         label: "설명 (선택)"
         type: text
-      - name: image
-        label: "사진 (선택)"
-        description: "사진을 올리면 갤러리에도 표시됩니다."
+      - name: photos
+        label: "사진 (여러 장 가능)"
+        description: "여러 장을 한 번에 올릴 수 있습니다. 첫 번째 사진이 목록·갤러리의 대표 사진이 되고, 소식을 누르면 모든 사진이 보입니다."
         type: image
+        options:
+          multiple: true
       - name: image_url
         label: "외부 사진 주소 (기존 구글 사이트 사진)"
-        description: "옛 구글 사이트 사진 주소입니다. 위 '사진'에 새로 올렸다면 이 칸은 비워도 됩니다."
+        description: "옛 구글 사이트 사진 주소입니다. 위 '사진'에 새로 올렸다면 이 칸은 지워도 됩니다."
         type: string
       - name: link
         label: "관련 링크 (선택)"
