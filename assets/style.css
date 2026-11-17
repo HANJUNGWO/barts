@@ -471,3 +471,25 @@ h2 { position: relative; }
   100% { left: calc(100% + 10px); opacity: 1; }
 }
 @media (prefers-reduced-motion: reduce) { .card:hover::after { animation: none; } }
+
+/* =====================================================================
+   v5: 학생 카드 — 노선 무늬 띠 + 동그란 프로필 사진
+   ===================================================================== */
+.person { text-align: center; }
+.person::before { display: none; }
+.person-photo { position: relative; padding: 0; height: 92px;
+  background:
+    radial-gradient(circle at 18% 58%, #fff 0 3px, #0aa0d6 3px 6px, transparent 6.5px),
+    radial-gradient(circle at 82% 58%, #fff 0 3px, #0aa0d6 3px 6px, transparent 6.5px),
+    linear-gradient(transparent calc(58% - 1.5px), rgba(10,160,214,.85) calc(58% - 1.5px) calc(58% + 1.5px), transparent calc(58% + 1.5px)),
+    linear-gradient(135deg, #0e1b36, #23407e); }
+.person-photo .avatar { position: absolute; left: 50%; top: 30px; transform: translateX(-50%);
+  width: 124px; height: 124px; aspect-ratio: 1; border-radius: 50%; border: 5px solid #fff;
+  box-shadow: 0 10px 24px rgba(14,27,54,.20); font-size: 34px; transition: transform .25s, box-shadow .25s; }
+.person-photo img.avatar { object-fit: cover; object-position: center 22%; }
+.person:hover .person-photo .avatar { transform: translateX(-50%) scale(1.05); box-shadow: 0 0 0 4px rgba(10,160,214,.35), 0 12px 28px rgba(14,27,54,.22); }
+.person-body { padding: 74px 20px 24px; }
+.person h4 { font-size: 21px; }
+.mail-row { display: flex; justify-content: center; }
+.person .m-links { justify-content: center; }
+.person .interests { text-align: center; }
