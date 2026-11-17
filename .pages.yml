@@ -159,7 +159,6 @@ content:
               values:
                 - { value: Postdoc, label: "박사후연구원" }
                 - { value: PhD, label: "박사과정" }
-                - { value: Integrated, label: "석박통합과정" }
                 - { value: MS, label: "석사과정" }
                 - { value: Intern, label: "학부연구생" }
                 - { value: Staff, label: "연구원·행정" }
