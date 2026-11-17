@@ -5,6 +5,14 @@ members:
     role: PhD
     links:
       - kind: linkedin
+  - name:
+      ko: 한정우
+      en: Jeongwoo Han
+    role: MS
+    photo: images/KakaoTalk_Photo_2026-11-17-14-12-55.jpeg
+    links:
+      - kind: linkedin
+        url: https://www.linkedin.com/in/jeongwoohan517/
 professor:
   name:
     ko: 김성후
