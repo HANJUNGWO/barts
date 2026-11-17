@@ -139,12 +139,15 @@
     if (/\bcv\b|\.pdf/i.test(u)) return 'cv';
     return 'homepage';
   }
-  function linkIcons(person) {
+  // 메일: 파란 버튼 / 링크(LinkedIn 등): 아이콘+이름 버튼
+  function mailButton(email) {
+    return email ? `<a class="btn btn-primary btn-sm mail-btn" href="mailto:${esc(email)}" title="${esc(email)}">✉ <span>${esc(email)}</span></a>` : '';
+  }
+  function linkButtons(person) {
     const ls = (person.links || []).filter(l => l && l.url).map(l => {
       const k = guessKind(l), label = l.label || KIND_LABEL[k];
-      return `<a class="ico" href="${esc(l.url)}" target="_blank" rel="noopener" title="${esc(label)}" aria-label="${esc(label)}">${ICONS[k] || ICONS.homepage}</a>`;
+      return `<a class="link-btn lk-${k}" href="${esc(l.url)}" target="_blank" rel="noopener">${ICONS[k] || ICONS.homepage}<span>${esc(label)}</span></a>`;
     });
-    if (person.email) ls.unshift(`<a class="ico" href="mailto:${esc(person.email)}" title="${esc(person.email)}" aria-label="Email">${ICONS.email}</a>`);
     return ls.length ? `<div class="m-links">${ls.join('')}</div>` : '';
   }
   function personCard(m, kicker, extra) {
@@ -155,8 +158,9 @@
         ${kicker ? `<p class="pi-kicker">${esc(kicker)}</p>` : ''}
         <h4>${esc(T(m.name))}</h4>
         ${other && other !== T(m.name) ? `<p class="alt-name">${esc(other)}</p>` : ''}
+        ${m.email ? `<div class="mail-row">${mailButton(m.email)}</div>` : ''}
         ${extra || ''}
-        ${linkIcons(m)}
+        ${linkButtons(m)}
       </div></article>`;
   }
   function memberCard(m) {
@@ -164,7 +168,7 @@
   }
   function renderPeople() {
     const p = D.people.professor || {};
-    const links = (p.links || []).filter(l => l.url).map(l => `<a class="btn btn-outline btn-sm" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join('');
+    const links = linkButtons(p);
     const chips = (D.site.research || []).map(r => `<span class="tag">${esc(T(r.title))}</span>`).join('');
     $('#pi').innerHTML = `
       <h3 class="group-h" id="g-Professor">${L('professor')}</h3>
@@ -174,7 +178,7 @@
           <p class="pi-kicker">${esc(T(p.title))}</p>
           <h3>${esc(T(p.name))}</h3>
           <p class="role">${esc(T(D.site.lab?.affiliation))}</p>
-          <div class="links">${p.email ? `<a class="btn btn-primary btn-sm" href="mailto:${esc(p.email)}">✉ ${esc(p.email)}</a>` : ''}${links}</div>
+          <div class="links">${mailButton(p.email)}${links}</div>
           ${chips ? `<p class="pi-sub">${L('interests')}</p><div class="tags">${chips}</div>` : ''}
           <details class="pi-more">
             <summary><span class="sm-open">${L('more')}</span><span class="sm-close">${L('less')}</span></summary>
