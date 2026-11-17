@@ -6,14 +6,10 @@ members:
     links:
       - kind: linkedin
   - name:
-      ko: 한정우
-      en: Jeongwoo Han
+      ko: 안태준
+      en: Taejun An
     role: MS
-    photo: images/KakaoTalk_Photo_2026-11-17-14-12-55.jpeg
-    email: runhjw@gmail.com
-    links:
-      - kind: linkedin
-        url: https://www.linkedin.com/in/jeongwoohan517/
+    email: neojun2000@korea.ac.kr
   - name:
       ko: 소사 아나
       en: Ana Valeria Sosa
@@ -24,10 +20,14 @@ members:
       - kind: linkedin
         url: https://www.linkedin.com/in/ana-valeria-sosa-ib%C3%A1%C3%B1ez-b463b1197/
   - name:
-      ko: 안태준
-      en: Taejun An
+      ko: 한정우
+      en: Jeongwoo Han
     role: MS
-    email: neojun2000@korea.ac.kr
+    photo: images/KakaoTalk_Photo_2026-11-17-14-12-55.jpeg
+    email: runhjw@gmail.com
+    links:
+      - kind: linkedin
+        url: https://www.linkedin.com/in/jeongwoohan517/
 professor:
   name:
     ko: 김성후
