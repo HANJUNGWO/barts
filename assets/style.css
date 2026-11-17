@@ -422,3 +422,24 @@ h2 { position: relative; }
 .person .alt-name { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
 .person .interests { margin: 10px 0 0; font-size: 14px; color: #424a5c; line-height: 1.5; }
 .person .m-links { margin-top: 14px; }
+
+/* v3: 학생 사진 여백 + 메일/링크 버튼 */
+.person-photo { padding: 18px 18px 0 22px; }
+.person-photo .avatar { border-radius: 14px; aspect-ratio: 4 / 5; box-shadow: 0 10px 24px rgba(14,27,54,.14); font-size: 40px; }
+.person-photo img.avatar { object-position: center 20%; }
+.person-body { padding: 16px 20px 22px 22px; }
+.mail-row { margin-top: 12px; }
+.mail-btn { max-width: 100%; font-size: 13px; padding: 8px 14px; gap: 6px; }
+.mail-btn span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.links { align-items: center; }
+.m-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.links .m-links { margin-top: 0; }
+.link-btn { display: inline-flex; align-items: center; gap: 7px; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line);
+  background: #fff; color: var(--navy); font-size: 13px; font-weight: 600; text-decoration: none !important; transition: background .15s, color .15s, border-color .15s; }
+.link-btn svg { width: 15px; height: 15px; flex: none; }
+.link-btn:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+.lk-linkedin { color: #0a66c2; border-color: #cfe0f3; }
+.lk-linkedin:hover { background: #0a66c2; border-color: #0a66c2; }
+.people-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 280px)); gap: 32px; }
+.mail-btn { font-size: 12.5px; padding: 8px 13px; }
+@media (max-width: 640px) { .people-grid { grid-template-columns: 1fr 1fr; gap: 16px; } .mail-btn span { font-size: 11px; } }
