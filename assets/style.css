@@ -279,7 +279,7 @@ h3.sub { font-size: 18px; margin: 56px 0 18px; color: var(--navy); }
 /* header: 노선 색 띠 */
 .nav { border-bottom: 0; }
 .nav::after, .footer::before { content: ""; display: block; height: 4px;
-  background: linear-gradient(90deg, var(--l1) 0 16.6%, var(--l2) 0 33.3%, var(--l3) 0 50%, var(--l4) 0 66.6%, var(--l5) 0 83.3%, var(--l6) 0); }
+  background: var(--navy); }
 .footer::before { margin: -52px 0 48px; }
 .menu a { position: relative; }
 .menu a::after { content: ""; position: absolute; left: 50%; right: 50%; bottom: -6px; height: 2px; background: var(--amber); transition: left .2s, right .2s; }
