@@ -30,8 +30,8 @@
   };
   const HIGHLIGHT = /(Kim, Sung Hoo\*?|Sung Hoo Kim\*?)/g;   // 굵게 표시할 이름
 
-  let lang = 'ko';
-  try { lang = localStorage.getItem('barts-lang') || 'ko'; } catch (e) {}
+  let lang = 'en';   // 기본 언어 (en = 영어, ko = 한국어)
+  try { lang = localStorage.getItem('barts-lang') || 'en'; } catch (e) {}
 
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
