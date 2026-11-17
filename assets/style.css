@@ -443,3 +443,6 @@ h2 { position: relative; }
 .people-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 280px)); gap: 32px; }
 .mail-btn { font-size: 12.5px; padding: 8px 13px; }
 @media (max-width: 640px) { .people-grid { grid-template-columns: 1fr 1fr; gap: 16px; } .mail-btn span { font-size: 11px; } }
+
+/* 교수님 사진: 원본 비율(5:7) 그대로, 머리가 잘리지 않게 위쪽 기준 */
+.pi-photo img.avatar { aspect-ratio: 5 / 7; object-position: center top; }
