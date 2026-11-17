@@ -446,3 +446,28 @@ h2 { position: relative; }
 
 /* 교수님 사진: 원본 비율(5:7) 그대로, 머리가 잘리지 않게 위쪽 기준 */
 .pi-photo img.avatar { aspect-ratio: 5 / 7; object-position: center top; }
+
+/* =====================================================================
+   v4: 색 = 파랑·하늘 번갈아 / 소개 세로 가운데 / 카드 위를 열차가 지나감
+   ===================================================================== */
+:root {
+  --l1: #2f5bd3; --l2: #0aa0d6; --l3: #2f5bd3; --l4: #0aa0d6; --l5: #2f5bd3; --l6: #0aa0d6;
+}
+#about .grid-2 { align-items: center; }
+#about .grid-2 > div:last-child { padding-top: 40px; }
+
+/* 연구 카드: 마우스를 올리면 아래 선로 위로 열차가 지나갑니다 */
+.card { padding-bottom: 46px; }
+.card::before { top: auto; bottom: 10px; left: 18px; right: 18px; width: auto; height: 3px; border-radius: 2px;
+  background: repeating-linear-gradient(90deg, var(--l2) 0 14px, transparent 14px 20px);
+  transform: scaleX(0); transform-origin: left; transition: transform 1.3s ease-in-out; }
+.card:hover::before { transform: scaleX(1); }
+.card::after { content: ""; position: absolute; bottom: 12px; left: -70px; width: 58px; height: 24px;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2026%22%3E%3Crect%20x%3D%221%22%20y%3D%222%22%20width%3D%2260%22%20height%3D%2218%22%20rx%3D%226%22%20fill%3D%22%230e1b36%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%2214%22%20width%3D%2260%22%20height%3D%223%22%20fill%3D%22%230aa0d6%22%2F%3E%3Crect%20x%3D%227%22%20y%3D%226%22%20width%3D%229%22%20height%3D%226%22%20rx%3D%221.5%22%20fill%3D%22%23ffe2a8%22%2F%3E%3Crect%20x%3D%2219%22%20y%3D%226%22%20width%3D%229%22%20height%3D%226%22%20rx%3D%221.5%22%20fill%3D%22%23ffe2a8%22%2F%3E%3Crect%20x%3D%2231%22%20y%3D%226%22%20width%3D%229%22%20height%3D%226%22%20rx%3D%221.5%22%20fill%3D%22%23ffe2a8%22%2F%3E%3Crect%20x%3D%2243%22%20y%3D%226%22%20width%3D%229%22%20height%3D%226%22%20rx%3D%221.5%22%20fill%3D%22%23ffe2a8%22%2F%3E%3Cpath%20d%3D%22M55%205h3a3%203%200%200%201%203%203v6h-6z%22%20fill%3D%22%23cfe8ff%22%2F%3E%3Ccircle%20cx%3D%2214%22%20cy%3D%2221.5%22%20r%3D%223%22%20fill%3D%22%230e1b36%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2221.5%22%20r%3D%223%22%20fill%3D%22%230e1b36%22%2F%3E%3Ccircle%20cx%3D%2261%22%20cy%3D%2212%22%20r%3D%221.6%22%20fill%3D%22%23fff6c8%22%2F%3E%3C%2Fsvg%3E") no-repeat center / contain; opacity: 0; pointer-events: none; }
+.card:hover::after { animation: card-train 1.6s ease-in-out forwards; }
+@keyframes card-train {
+  0% { left: -70px; opacity: 1; }
+  85% { opacity: 1; }
+  100% { left: calc(100% + 10px); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .card:hover::after { animation: none; } }
