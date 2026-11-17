@@ -271,7 +271,7 @@ h3.sub { font-size: 18px; margin: 56px 0 18px; color: var(--navy); }
   --l3: #ef7c1c;   /* People */
   --l4: #0aa0d6;   /* Publications */
   --l5: #8b5fbf;   /* News */
-  --l6: #b3123e;   /* Join (고려대 크림슨 계열) */
+  --l6: #8b5fbf;   /* Join — 5번째 색과 통일 */
 }
 #about { --lc: var(--l1); } #research { --lc: var(--l2); } #people { --lc: var(--l3); }
 #publications { --lc: var(--l4); } #news { --lc: var(--l5); } #join { --lc: var(--l6); }
@@ -388,11 +388,11 @@ h2 { position: relative; }
 .n-title { font-size: 17px; }
 
 /* join */
-.join { background: radial-gradient(rgba(255,255,255,.07) 1px, transparent 1.2px) 0 0 / 22px 22px, linear-gradient(135deg, #0e1b36, #0a1428 60%, #2a0b18); }
-.join .eyebrow.light { color: #ff9db5; }
+.join { background: radial-gradient(rgba(255,255,255,.07) 1px, transparent 1.2px) 0 0 / 22px 22px, linear-gradient(135deg, #0e1b36, #0a1428 60%, #1e1236); }
+.join .eyebrow.light { color: var(--amber); }
 .positions li { background: rgba(255,255,255,.04); transition: background .2s; }
 .positions li:hover { background: rgba(255,255,255,.09); }
-.positions li::before { color: var(--l6); filter: brightness(1.6); }
+.positions li::before { color: var(--amber); }
 
 /* modal */
 .modal-empty { color: var(--muted); font-style: italic; margin: 0; }
