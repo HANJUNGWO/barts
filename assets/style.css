@@ -513,3 +513,8 @@ h2 { position: relative; }
   100% { opacity: 0; left: calc(100% - 6px); }
 }
 @media (prefers-reduced-motion: reduce) { .card:hover::after { animation: none; } }
+
+/* v7: 학생 사진을 잘라내지 않고 전체를 축소해서 (흰 배경 사진 기준) + 동그라미 조금 크게 */
+.person-photo img.avatar { object-fit: contain; object-position: center bottom; background: #fff; }
+.person-photo .avatar { width: 140px; height: 140px; top: 24px; }
+.person-body { padding-top: 84px; }
