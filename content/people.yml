@@ -14,6 +14,15 @@ members:
     links:
       - kind: linkedin
         url: https://www.linkedin.com/in/jeongwoohan517/
+  - name:
+      ko: 소사 아나
+      en: Ana Valeria Sosa
+    role: MS
+    photo: images/KakaoTalk_Photo_2026-11-17-14-15-05.jpeg
+    email: valesosai98@korea.ac.kr
+    links:
+      - kind: linkedin
+        url: https://www.linkedin.com/in/ana-valeria-sosa-ib%C3%A1%C3%B1ez-b463b1197/
 professor:
   name:
     ko: 김성후
