@@ -8,7 +8,7 @@
     ko: { about: '소개', research: '연구', people: '구성원', publications: '논문', news: '소식', gallery: '갤러리', contact: '연락처',
       joinBtn: '지원하기', researchTitle: '연구 분야', peopleTitle: '구성원', members: '연구원', alumni: '졸업생',
       pubTitle: '논문', all: '전체', journal: '저널', chapters: '북챕터', corrNote: '* 교신저자', newsTitle: '소식',
-      allNews: '전체 소식 보기', lessNews: '접기', emailUs: '이메일 보내기', education: '학력', career: '경력', awards: '수상',
+      allNews: '전체 소식 보기', more: '학력 · 경력 · 수상 · 학술활동 자세히 보기', less: '접기', interests: '연구 분야', noDetail: '자세한 내용은 준비 중입니다.', lessNews: '접기', emailUs: '이메일 보내기', education: '학력', career: '경력', awards: '수상',
       journalPapers: '저널 논문', bookChapters: '북챕터', since: '연구 시작', recruit: '함께할 연구원을 모집합니다',
       recruitSub: '아래 Join BARTS 참고', noResult: '검색 결과가 없습니다.', search: '제목, 저자, 저널 검색…',
       service: '학술 활동', committee: '학위논문 심사', professor: '지도교수', recruiting: '모집 중', recruitingSub: '함께할 분을 기다립니다',
@@ -19,7 +19,7 @@
     en: { about: 'About', research: 'Research', people: 'People', publications: 'Publications', news: 'News', gallery: 'Gallery', contact: 'Contact',
       joinBtn: 'Join BARTS', researchTitle: 'Research areas', peopleTitle: 'People', members: 'Researchers', alumni: 'Alumni',
       pubTitle: 'Publications', all: 'All', journal: 'Journal', chapters: 'Book chapters', corrNote: '* Corresponding author', newsTitle: 'News',
-      allNews: 'All news', lessNews: 'Show less', emailUs: 'Email us', education: 'Education', career: 'Career', awards: 'Honors & Awards',
+      allNews: 'All news', more: 'Education · Career · Honors · Service', less: 'Hide details', interests: 'Research interests', noDetail: 'Details coming soon.', lessNews: 'Show less', emailUs: 'Email us', education: 'Education', career: 'Career', awards: 'Honors & Awards',
       journalPapers: 'Journal papers', bookChapters: 'Book chapters', since: 'Publishing since', recruit: 'We are recruiting',
       recruitSub: 'See Join BARTS below', noResult: 'No matching publications.', search: 'Search title, author, journal…',
       service: 'Professional Service', committee: 'Dissertation Committee (M.S./Ph.D.)', professor: 'Professor', recruiting: 'Now recruiting', recruitingSub: 'We would love to hear from you',
@@ -39,7 +39,7 @@
   const T = v => v == null ? '' : typeof v === 'object' ? (v[lang] ?? v.en ?? v.ko ?? '') : String(v);
   const L = k => UI[lang][k] ?? k;
   const get = (o, path) => path.split('.').reduce((a, k) => a?.[k], o);
-  const initials = n => String(n || '?').split(/\s+/).map(w => w[0]).join('').slice(0, 2);
+  const initials = n => String(n || '?').split(/\s+/).map(w => w[0]).join('').slice(0, 2).toUpperCase();
 
   async function load(name) {
     let r = await fetch(`content/${name}.yml`, { cache: 'no-cache' });
@@ -50,13 +50,13 @@
 
   let D;
   try {
-    const [site, people, pubs, news, gallery] = await Promise.all(['site', 'people', 'publications', 'news', 'gallery'].map(load));
-    D = { site, people, pubs, gallery: gallery || {},
+    const [site, people, pubs, news] = await Promise.all(['site', 'people', 'publications', 'news'].map(load));
+    D = { site, people, pubs,
       news: (Array.isArray(news) ? news : []).map(n => {
         const imgs = [...(Array.isArray(n.photos) ? n.photos : n.photos ? [n.photos] : []), n.image, n.image_url].filter(Boolean);
         return { ...n, imgs, image: imgs[0] || '' };
       }) };
-    D.people.members ||= []; D.people.alumni ||= []; D.gallery.photos ||= [];
+    D.people.members ||= []; D.people.alumni ||= [];
   } catch (err) {
     const box = document.createElement('div');
     box.className = 'load-error wrap';
@@ -87,14 +87,28 @@
     $('#pub-count').textContent = L('journalPapersN').replace('{j}', j).replace('{c}', c);
   }
 
+  const R_ICONS = [
+    '<path d="M12 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM8 21l2-7-2-2V9l4-1 3 3 3 1M10 14l3 2v5"/>',
+    '<circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6.8 10.3 11M7 17.2l3.3-4.2M13.7 11 17 6.8M13.7 13l3.3 4.2"/>',
+    '<circle cx="6" cy="18" r="3"/><circle cx="18" cy="18" r="3"/><path d="M6 18h7l4-10h3M14 8h3"/>',
+    '<path d="M3 21V9l5-3v15M8 21V4l7 3v14M15 21v-9l6 2v7M2 21h20"/>'
+  ];
   function renderResearch() {
     $('#research-list').innerHTML = (D.site.research || []).map((r, i) => `
       <article class="card reveal">
-        <span class="num">${String(i + 1).padStart(2, '0')}</span>
+        <div class="card-top"><span class="num">${String(i + 1).padStart(2, '0')}</span>
+        <svg class="card-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${R_ICONS[i % R_ICONS.length]}</svg></div>
         <h3>${esc(T(r.title))}</h3>
         <p>${esc(T(r.body))}</p>
         <div class="tags">${(r.tags || []).map(t => `<span class="tag">${esc(T(t))}</span>`).join('')}</div>
       </article>`).join('');
+  }
+
+  function renderTicker() {
+    const words = [...new Set((D.site.research || []).flatMap(r => (r.tags || []).map(T)))];
+    if (!words.length) return;
+    const row = words.map(w => `<span>${esc(w)}</span>`).join('');
+    $('#ticker').innerHTML = row + row;
   }
 
   function avatar(p, cls = '') {
@@ -132,29 +146,44 @@
     if (person.email) ls.unshift(`<a class="ico" href="mailto:${esc(person.email)}" title="${esc(person.email)}" aria-label="Email">${ICONS.email}</a>`);
     return ls.length ? `<div class="m-links">${ls.join('')}</div>` : '';
   }
+  function personCard(m, kicker, extra) {
+    const other = lang === 'ko' ? m.name?.en : m.name?.ko;
+    return `<article class="person reveal">
+      <div class="person-photo">${avatar(m)}</div>
+      <div class="person-body">
+        ${kicker ? `<p class="pi-kicker">${esc(kicker)}</p>` : ''}
+        <h4>${esc(T(m.name))}</h4>
+        ${other && other !== T(m.name) ? `<p class="alt-name">${esc(other)}</p>` : ''}
+        ${extra || ''}
+        ${linkIcons(m)}
+      </div></article>`;
+  }
   function memberCard(m) {
-    return `<div class="member reveal">${avatar(m, 'sm')}
-      <div class="m-info"><b>${esc(T(m.name))}</b>
-      ${m.interests ? `<small>${esc(T(m.interests))}</small>` : ''}
-      ${linkIcons(m)}</div></div>`;
+    return personCard(m, UI[lang].role[m.role] || m.role || '', m.interests ? `<p class="interests">${esc(T(m.interests))}</p>` : '');
   }
   function renderPeople() {
     const p = D.people.professor || {};
     const links = (p.links || []).filter(l => l.url).map(l => `<a class="btn btn-outline btn-sm" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join('');
+    const chips = (D.site.research || []).map(r => `<span class="tag">${esc(T(r.title))}</span>`).join('');
     $('#pi').innerHTML = `
       <h3 class="group-h" id="g-Professor">${L('professor')}</h3>
       <div class="pi reveal">
-        <div>${avatar(p)}</div>
-        <div>
+        <div class="pi-photo">${avatar(p)}</div>
+        <div class="pi-main">
+          <p class="pi-kicker">${esc(T(p.title))}</p>
           <h3>${esc(T(p.name))}</h3>
-          <p class="role">${esc(T(p.title))} · ${esc(T(D.site.lab?.affiliation))}</p>
-          <div class="links">${p.email ? `<a class="btn btn-primary btn-sm" href="mailto:${esc(p.email)}">${esc(p.email)}</a>` : ''}${links}</div>
-          <div class="pi-cols">
-            <div><h4>${L('education')}</h4>${list(p.education)}<h4>${L('career')}</h4>${list(p.career)}</div>
-            <div><h4>${L('awards')}</h4>${list(p.awards)}
-              ${(p.service || []).length ? `<h4>${L('service')}</h4>${list(p.service)}` : ''}
-              ${(p.committee || []).length ? `<h4>${L('committee')}</h4><p class="committee">${p.committee.map(x => esc(T(x))).join(' · ')}</p>` : ''}</div>
-          </div>
+          <p class="role">${esc(T(D.site.lab?.affiliation))}</p>
+          <div class="links">${p.email ? `<a class="btn btn-primary btn-sm" href="mailto:${esc(p.email)}">✉ ${esc(p.email)}</a>` : ''}${links}</div>
+          ${chips ? `<p class="pi-sub">${L('interests')}</p><div class="tags">${chips}</div>` : ''}
+          <details class="pi-more">
+            <summary><span class="sm-open">${L('more')}</span><span class="sm-close">${L('less')}</span></summary>
+            <div class="pi-cols">
+              <div><h4>${L('education')}</h4>${list(p.education)}<h4>${L('career')}</h4>${list(p.career)}</div>
+              <div><h4>${L('awards')}</h4>${list(p.awards)}
+                ${(p.service || []).length ? `<h4>${L('service')}</h4>${list(p.service)}` : ''}
+                ${(p.committee || []).length ? `<h4>${L('committee')}</h4><p class="committee">${p.committee.map(x => esc(T(x))).join(' · ')}</p>` : ''}</div>
+            </div>
+          </details>
         </div>
       </div>`;
 
@@ -164,12 +193,11 @@
       const ms = members.filter(m => (m.role || 'Staff') === g);
       if (g === 'Staff' && !ms.length) return '';
       if (!ms.length) return `<h3 class="group-h empty" id="g-${g}">${L('groups')[g]}<a class="group-empty" href="#join">${L('recruiting')} →</a></h3>`;
-      return `<h3 class="group-h" id="g-${g}">${L('groups')[g]} <span>${ms.length}</span></h3><div class="members">${ms.map(memberCard).join('')}</div>`;
+      return `<h3 class="group-h" id="g-${g}">${L('groups')[g]} <span>${ms.length}</span></h3><div class="people-grid">${ms.map(memberCard).join('')}</div>`;
     });
     blocks.push(alumni.length
-      ? `<h3 class="group-h" id="g-Alumni">${L('groups').Alumni} <span>${alumni.length}</span></h3><div class="members">${
-          alumni.map(a => `<div class="member">${avatar(a, 'sm')}<div><b>${esc(T(a.name))}</b>
-          <small>${esc(T(a.degree))}</small>${a.now ? `<small>→ ${esc(T(a.now))}</small>` : ''}${linkIcons(a)}</div></div>`).join('')}</div>`
+      ? `<h3 class="group-h" id="g-Alumni">${L('groups').Alumni} <span>${alumni.length}</span></h3><div class="people-grid">${
+          alumni.map(a => personCard(a, T(a.degree), a.now ? `<p class="interests">→ ${esc(T(a.now))}</p>` : '')).join('')}</div>`
       : `<h3 class="group-h empty" id="g-Alumni">${L('groups').Alumni}<span class="group-empty soon">${L('comingSoon')}</span></h3>`);
     $('#groups').innerHTML = blocks.join('');
 
@@ -215,7 +243,7 @@
     });
     $('#news-list').innerHTML = byYear.map(g => `
       <div class="year-group"><div class="yr">${esc(g.y)}</div><ul class="news">
-      ${g.list.map(n => `<li class="${n.image ? 'has-img' : ''} ${(n.imgs.length || T(n.body) || n.link) ? 'clickable' : ''}" data-n="${D.news.indexOf(n)}">
+      ${g.list.map(n => `<li class="${n.image ? 'has-img' : ''} clickable" data-n="${D.news.indexOf(n)}">
         <div class="n-meta"><time>${esc(n.date)}</time><span class="ntag t-${esc(n.tag)}">${esc(L('tags')[n.tag] || n.tag || '')}</span></div>
         <div class="n-body">
           <span class="n-title">${esc(T(n.title))}</span>
@@ -228,18 +256,6 @@
     more.textContent = newsAll ? L('lessNews') : `${L('allNews')} (${filtered.length})`;
   }
 
-  function renderGallery() {
-    const fromNews = D.news.filter(n => n.image).map(n => ({ src: n.image, caption: n.title, date: n.date, n: D.news.indexOf(n), count: n.imgs.length }));
-    const photos = [...(D.gallery.photos || []).filter(g => g && g.src), ...fromNews];
-    $('#gallery').hidden = !photos.length;
-    $$('.nav-gallery').forEach(a => a.hidden = !photos.length);
-    $('#gallery-list').innerHTML = photos.map(g => `
-      <figure class="reveal"><button class="g-open" ${g.n != null ? `data-n="${g.n}"` : `data-src="${esc(g.src)}" data-cap="${esc(T(g.caption))}"`}>
-      <img src="${esc(g.src)}" alt="${esc(T(g.caption))}" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()">
-      ${g.count > 1 ? `<span class="g-count">${g.count}</span>` : ''}</button>
-      <figcaption>${esc(T(g.caption))}${g.date ? `<span>${esc(g.date)}</span>` : ''}</figcaption></figure>`).join('');
-  }
-
   // 소식 상세 창
   const modal = document.createElement('div');
   modal.className = 'modal'; modal.hidden = true; modal.setAttribute('role', 'dialog'); modal.setAttribute('aria-modal', 'true');
@@ -250,7 +266,7 @@
       <button class="modal-close" aria-label="Close">×</button>
       <div class="modal-meta"><time>${esc(n.date)}</time><span class="ntag t-${esc(n.tag)}">${esc(L('tags')[n.tag] || n.tag || '')}</span></div>
       <h3>${esc(T(n.title))}</h3>
-      ${T(n.body) ? `<p class="modal-body">${esc(T(n.body))}</p>` : ''}
+      ${T(n.body) ? `<p class="modal-body">${esc(T(n.body))}</p>` : (n.imgs.length ? '' : `<p class="modal-empty">${L('noDetail')}</p>`)}
       ${n.imgs.length ? `<div class="modal-photos ${n.imgs.length === 1 ? 'one' : ''}">${n.imgs.map(src =>
         `<button data-src="${esc(src)}" data-cap="${esc(T(n.title))}"><img src="${esc(src)}" alt="" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></button>`).join('')}</div>` : ''}
       ${n.link ? `<a class="modal-link" href="${esc(n.link)}" target="_blank" rel="noopener">${lang === 'ko' ? '관련 링크' : 'Related link'} →</a>` : ''}
@@ -264,7 +280,7 @@
   }
 
   function renderAll() {
-    renderBinds(); renderStats(); renderResearch(); renderPeople(); renderPubs(); renderNews(); renderGallery(); renderJoin();
+    renderBinds(); renderStats(); renderResearch(); renderPeople(); renderPubs(); renderNews(); renderJoin(); renderTicker();
     observe();
   }
 
