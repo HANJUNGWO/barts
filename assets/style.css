@@ -493,3 +493,23 @@ h2 { position: relative; }
 .mail-row { display: flex; justify-content: center; }
 .person .m-links { justify-content: center; }
 .person .interests { text-align: center; }
+
+/* =====================================================================
+   v6: 연구 카드 — 위쪽 선이 천천히 깔끔하게 지나감 (열차 제거)
+   ===================================================================== */
+.card { padding-bottom: 26px; }
+.card::before { top: 0; bottom: auto; left: 0; right: 0; width: auto; height: 4px; border-radius: 0;
+  background: linear-gradient(90deg, var(--l1), var(--l2));
+  transform: scaleX(0); transform-origin: left; transition: transform 1.1s cubic-bezier(.45,.05,.25,1); }
+.card:hover::before { transform: scaleX(1); }
+.card::after { content: ""; position: absolute; top: -3px; left: 0; width: 10px; height: 10px; border-radius: 50%;
+  margin-top: 0; background: #fff; box-shadow: 0 0 0 3px var(--l2), 0 0 14px 4px rgba(10,160,214,.55);
+  opacity: 0; pointer-events: none; }
+.card:hover::after { animation: card-light 1.1s cubic-bezier(.45,.05,.25,1) forwards; }
+@keyframes card-light {
+  0%   { opacity: 0; left: -6px; }
+  10%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { opacity: 0; left: calc(100% - 6px); }
+}
+@media (prefers-reduced-motion: reduce) { .card:hover::after { animation: none; } }
