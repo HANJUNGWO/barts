@@ -23,6 +23,11 @@ members:
     links:
       - kind: linkedin
         url: https://www.linkedin.com/in/ana-valeria-sosa-ib%C3%A1%C3%B1ez-b463b1197/
+  - name:
+      ko: 안태준
+      en: Taejun An
+    role: MS
+    email: neojun2000@korea.ac.kr
 professor:
   name:
     ko: 김성후
