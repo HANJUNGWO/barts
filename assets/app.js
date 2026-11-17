@@ -118,7 +118,8 @@
   }
   const list = arr => (arr || []).length ? `<ul>${arr.map(x => `<li>${esc(T(x))}</li>`).join('')}</ul>` : '';
 
-  const GROUPS = ['Postdoc', 'PhD', 'Integrated', 'MS', 'Intern', 'Staff'];
+  const GROUPS = ['Postdoc', 'PhD', 'MS', 'Intern', 'Staff'];
+  const roleOf = m => (m.role === 'Integrated' ? 'PhD' : (m.role || 'Staff'));
   // 링크 버튼 (LinkedIn, Google Scholar, GitHub, 홈페이지, CV, 기타)
   const ICONS = {
     linkedin: '<svg viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg>',
@@ -159,7 +160,7 @@
       </div></article>`;
   }
   function memberCard(m) {
-    return personCard(m, UI[lang].role[m.role] || m.role || '', m.interests ? `<p class="interests">${esc(T(m.interests))}</p>` : '');
+    return personCard(m, '', m.interests ? `<p class="interests">${esc(T(m.interests))}</p>` : '');
   }
   function renderPeople() {
     const p = D.people.professor || {};
@@ -190,7 +191,7 @@
     const members = D.people.members || [];
     const alumni = D.people.alumni || [];
     const blocks = GROUPS.map(g => {
-      const ms = members.filter(m => (m.role || 'Staff') === g);
+      const ms = members.filter(m => roleOf(m) === g);
       if (g === 'Staff' && !ms.length) return '';
       if (!ms.length) return `<h3 class="group-h empty" id="g-${g}">${L('groups')[g]}<a class="group-empty" href="#join">${L('recruiting')} →</a></h3>`;
       return `<h3 class="group-h" id="g-${g}">${L('groups')[g]} <span>${ms.length}</span></h3><div class="people-grid">${ms.map(memberCard).join('')}</div>`;
@@ -203,7 +204,7 @@
 
     const tabs = ['Professor', ...GROUPS.filter(g => g !== 'Staff' || members.some(m => m.role === 'Staff')), 'Alumni'];
     $('#people-tabs').innerHTML = tabs.map(g => {
-      const n = g === 'Professor' ? 1 : g === 'Alumni' ? alumni.length : members.filter(m => m.role === g).length;
+      const n = g === 'Professor' ? 1 : g === 'Alumni' ? alumni.length : members.filter(m => roleOf(m) === g).length;
       return `<a href="#g-${g}">${g === 'Professor' ? L('professor') : L('groups')[g]}<span>${n}</span></a>`;
     }).join('');
   }
