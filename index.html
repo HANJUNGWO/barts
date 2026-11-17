@@ -28,7 +28,6 @@
         <a href="#people" data-i18n="people">People</a>
         <a href="#publications" data-i18n="publications">Publications</a>
         <a href="#news" data-i18n="news">News</a>
-        <a href="#gallery" data-i18n="gallery" class="nav-gallery">Gallery</a>
         <a href="#contact" data-i18n="contact">Contact</a>
       </nav>
       <div class="nav-right">
@@ -54,6 +53,8 @@
     </div>
   </section>
 
+  <div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+
   <main id="main">
     <!-- 01 About -->
     <section class="section" id="about">
@@ -61,6 +62,15 @@
         <div>
           <p class="eyebrow"><span>01</span> About</p>
           <h2 data-bind="about.title"></h2>
+          <div class="route" aria-hidden="true">
+            <div class="route-line"><span class="route-train"></span></div>
+            <ol>
+              <li><b>Behavior</b><span>Individual travel choices</span></li>
+              <li><b>Models</b><span>Discrete choice × machine learning</span></li>
+              <li><b>Forecasts</b><span>Demand &amp; mobility patterns</span></li>
+              <li><b>Decisions</b><span>Policy &amp; infrastructure planning</span></li>
+            </ol>
+          </div>
         </div>
         <div>
           <p class="lead" data-bind="about.body"></p>
@@ -122,15 +132,6 @@
         </div>
         <div id="news-list"></div>
         <button class="btn btn-outline" id="news-more" hidden data-i18n="allNews">All news</button>
-      </div>
-    </section>
-
-    <!-- 06 Gallery (소식의 사진 + gallery.yml 사진, 자동으로 숨김/표시) -->
-    <section class="section alt" id="gallery" hidden>
-      <div class="wrap">
-        <p class="eyebrow"><span>06</span> Gallery</p>
-        <h2 data-i18n="gallery">Gallery</h2>
-        <div class="gallery" id="gallery-list"></div>
       </div>
     </section>
 
