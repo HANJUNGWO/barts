@@ -9,8 +9,8 @@ media:
 content:
   # ------------------------------------------------------------ 소식
   - name: news
-    label: "📰 소식 · 갤러리"
-    description: "맨 위가 최신 소식입니다. 사진을 넣으면 갤러리에도 자동으로 올라갑니다. 항목 왼쪽 손잡이를 끌어 순서를 바꿀 수 있습니다."
+    label: "📰 소식"
+    description: "맨 위가 최신 소식입니다. 홈페이지에서 소식을 누르면 설명과 사진이 크게 보입니다. 항목 왼쪽 손잡이를 끌어 순서를 바꿀 수 있습니다."
     type: file
     path: content/news.yml
     format: yaml
@@ -46,11 +46,11 @@ content:
         type: string
         required: true
       - name: body
-        label: "설명 (선택)"
+        label: "자세한 설명"
         type: text
       - name: photos
         label: "사진 (여러 장 가능)"
-        description: "여러 장을 한 번에 올릴 수 있습니다. 첫 번째 사진이 목록·갤러리의 대표 사진이 되고, 소식을 누르면 모든 사진이 보입니다."
+        description: "여러 장을 한 번에 올릴 수 있습니다. 첫 번째 사진이 목록의 대표 사진이 되고, 소식을 누르면 모든 사진이 보입니다."
         type: image
         options:
           multiple: true
@@ -272,31 +272,6 @@ content:
           - { name: awards, label: "수상", type: string, list: true }
           - { name: service, label: "학술 활동", type: string, list: true }
           - { name: committee, label: "학위논문 심사 대학", type: string, list: true }
-
-  # ------------------------------------------------------------ 갤러리 추가 사진
-  - name: gallery
-    label: "🖼️ 갤러리 추가 사진"
-    description: "소식과 상관없는 사진(단체사진 등)만 여기에 추가하세요. 소식에 넣은 사진은 갤러리에 자동으로 나옵니다."
-    type: file
-    path: content/gallery.yml
-    format: yaml
-    fields:
-      - name: photos
-        label: "사진"
-        type: object
-        list:
-          collapsible:
-            collapsed: false
-            summary: "{fields.date} · {fields.caption.ko}"
-        fields:
-          - { name: src, label: "사진", type: image, required: true }
-          - name: caption
-            label: "설명"
-            type: object
-            fields:
-              - { name: ko, label: "한글", type: string }
-              - { name: en, label: "영문", type: string }
-          - { name: date, label: "날짜", type: string }
 
   # ------------------------------------------------------------ 기본 정보
   - name: site
