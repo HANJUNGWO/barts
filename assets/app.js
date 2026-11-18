@@ -198,7 +198,8 @@
       const ms = members.filter(m => roleOf(m) === g);
       if (g === 'Staff' && !ms.length) return '';
       if (!ms.length) return `<h3 class="group-h empty" id="g-${g}">${L('groups')[g]}<a class="group-empty" href="#join">${L('recruiting')} →</a></h3>`;
-      return `<h3 class="group-h" id="g-${g}">${L('groups')[g]} <span>${ms.length}</span></h3><div class="people-grid">${ms.map(memberCard).join('')}</div>`;
+      const hiring = g !== 'Staff' ? `<a class="group-empty" href="#join">${L('recruiting')} →</a>` : '';   // 학생 그룹은 항상 '모집 중' 버튼 표시
+      return `<h3 class="group-h" id="g-${g}">${L('groups')[g]} <span>${ms.length}</span>${hiring}</h3><div class="people-grid">${ms.map(memberCard).join('')}</div>`;
     });
     blocks.push(alumni.length
       ? `<h3 class="group-h" id="g-Alumni">${L('groups').Alumni} <span>${alumni.length}</span></h3><div class="people-grid">${
