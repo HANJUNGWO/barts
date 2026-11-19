@@ -21,7 +21,7 @@
   let G = {};                  // geometry
   let train = null, trainWait = 1.2, trainDir = 1;
   let cars = [];
-  let last = 0, running = false, visible = true;
+  let last = 0, running = false, visible = true, rafId = 0;
 
   function layout() {
     const r = canvas.getBoundingClientRect();
@@ -346,10 +346,11 @@
     const dt = Math.min(0.05, (now - last) / 1000 || 0.016);
     last = now;
     step(dt); draw(now / 1000);
-    requestAnimationFrame(frame);
+    rafId = requestAnimationFrame(frame);
   }
-  function start() { if (running || reduce || !visible || document.hidden) return; running = true; last = performance.now(); requestAnimationFrame(frame); }
-  function stop() { running = false; }
+  // 다른 창에 갔다 와도 애니메이션이 겹쳐 돌지 않도록 예약을 항상 하나만 유지
+  function start() { if (running || reduce || !visible || document.hidden) return; running = true; last = performance.now(); cancelAnimationFrame(rafId); rafId = requestAnimationFrame(frame); }
+  function stop() { running = false; cancelAnimationFrame(rafId); }
 
   layout();
   if (reduce) { newTrain(); train.x = W * 0.2; draw(0); }
