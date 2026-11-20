@@ -153,8 +153,15 @@ items:
   - year: 2026
     date: 2026-08-10
     tag: seminar
-    title: "International Seminar Series #26-2"
-    body: Seminar on social networks and travel behavior.
+    title: International Seminar Series (#26-2) hosted by BARTS
+    body: 'The BARTS Lab hosted a seminar ("Going the extra mile: How social
+      networks affect our travel behaviour") as part of its International
+      Seminar Series. Prof. Giancarlos Parady of the Univ. of Tokyo was invited.
+      (Korea Univ., Aug. 10, 2026)'
+    photos:
+      - images/스크린샷 2026-11-20 오후 6.47.10.png
+      - images/스크린샷 2026-11-20 오후 6.47.15.png
+      - images/스크린샷 2026-11-20 오후 6.47.21.png
   - year: 2026
     date: 2026-06-29
     tag: seminar
