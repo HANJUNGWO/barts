@@ -1,5 +1,13 @@
 items:
   - year: 2026
+    date: 2026-11-20
+    tag: people
+    title: Preparing for Chistmas!
+    photos:
+      - images/KakaoTalk_Photo_2026-11-20-14-21-36.jpeg
+      - images/KakaoTalk_Photo_2026-11-20-14-21-24.jpeg
+      - images/KakaoTalk_Photo_2026-11-20-14-21-03.jpeg
+  - year: 2026
     date: 2026-10-29
     tag: award
     title: Early Career Scientist Award — Fall Conference of the Korean Society for
@@ -210,12 +218,3 @@ items:
     date: 2023-01-08 ~ 12
     tag: conference
     title: TRB Annual Meeting 2023 (Washington, D.C.)
-  - year: 2026
-    date: 2026-11-20
-    tag: people
-    title: Preparing for Chistmas
-    body: .
-    photos:
-      - images/KakaoTalk_Photo_2026-11-20-14-21-36.jpeg
-      - images/KakaoTalk_Photo_2026-11-20-14-21-24.jpeg
-      - images/KakaoTalk_Photo_2026-11-20-14-21-03.jpeg
