@@ -118,8 +118,16 @@ items:
   - year: 2026
     date: 2026-09-08
     tag: conference
-    title: 2026 Global Mobility Conference
-    body: Prof. Kim chaired a session.
+    title: The 2026 Global Mobility Conference
+    body: "Prof. Sung Hoo Kim chaired the session \"The State of DRT: Now and What's
+      Next\" at the 2026 Global Mobility Conference, Seoul, Korea (The Westin
+      Josun Seoul, Sept. 8, 2026)."
+    photos:
+      - images/스크린샷 2026-11-20 오후 6.25.04.png
+      - images/스크린샷 2026-11-20 오후 6.25.08.png
+      - images/스크린샷 2026-11-20 오후 6.25.13.png
+      - images/스크린샷 2026-11-20 오후 6.25.24.png
+      - images/스크린샷 2026-11-20 오후 6.25.19.png
   - year: 2026
     date: 2026-08-21
     tag: seminar
