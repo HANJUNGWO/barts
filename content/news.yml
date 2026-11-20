@@ -40,7 +40,17 @@ items:
   - year: 2026
     date: 2026-10-19 ~ 23
     tag: conference
-    title: 2026 ITS World Congress & joint lab retreat with SMOP Lab
+    title: The 2026 ITS World Congress + Joint lab retreat with SMOP lab
+    body: The BARTS lab attended the the 2026 ITS World Congress in Gangneung (Oct.
+      19-23, 2026). We also enjoyed a joint lab retreat with Prof. Seungmo
+      Kang’s SMOP Lab.
+    photos:
+      - images/스크린샷 2026-11-20 오후 6.12.36.png
+      - images/스크린샷 2026-11-20 오후 6.11.45-1.png
+      - images/스크린샷 2026-11-20 오후 6.12.18.png
+      - images/스크린샷 2026-11-20 오후 6.12.43.png
+      - images/스크린샷 2026-11-20 오후 6.12.48.png
+      - images/스크린샷 2026-11-20 오후 6.12.58.png
   - year: 2026
     date: 2026-10-16
     tag: people
