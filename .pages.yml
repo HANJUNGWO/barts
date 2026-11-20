@@ -14,53 +14,57 @@ content:
     type: file
     path: content/news.yml
     format: yaml
-    list:
-      collapsible:
-        collapsed: true
-        summary: "{fields.date} · {fields.title}"
     fields:
-      - name: year
-        label: "연도 (묶음용)"
-        type: number
-        required: true
-      - name: date
-        label: "날짜"
-        description: "자유 형식. 예) 2026-10-29 / 2026-10-19 ~ 23 / 2026"
-        type: string
-        required: true
-      - name: tag
-        label: "분류"
-        type: select
-        options:
-          values:
-            - { value: award, label: "수상" }
-            - { value: conference, label: "학회" }
-            - { value: talk, label: "발표·초청강연" }
-            - { value: seminar, label: "세미나" }
-            - { value: service, label: "학술활동 (편집위원 등)" }
-            - { value: grant, label: "연구과제" }
-            - { value: people, label: "연구실 (방문, 생일 등)" }
-            - { value: event, label: "행사" }
-      - name: title
-        label: "제목"
-        type: string
-        required: true
-      - name: body
-        label: "자세한 설명"
-        type: text
-      - name: photos
-        label: "사진 (여러 장 가능)"
-        description: "여러 장을 한 번에 올릴 수 있습니다. 첫 번째 사진이 목록의 대표 사진이 되고, 소식을 누르면 모든 사진이 보입니다."
-        type: image
-        options:
-          multiple: true
-      - name: image_url
-        label: "외부 사진 주소 (기존 구글 사이트 사진)"
-        description: "옛 구글 사이트 사진 주소입니다. 위 '사진'에 새로 올렸다면 이 칸은 지워도 됩니다."
-        type: string
-      - name: link
-        label: "관련 링크 (선택)"
-        type: string
+      - name: items
+        label: "소식 목록"
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.date} · {fields.title}"
+        fields:
+          - name: year
+            label: "연도 (묶음용)"
+            type: number
+            required: true
+          - name: date
+            label: "날짜"
+            description: "자유 형식. 예) 2026-10-29 / 2026-10-19 ~ 23 / 2026"
+            type: string
+            required: true
+          - name: tag
+            label: "분류"
+            type: select
+            options:
+              values:
+                - { value: award, label: "수상" }
+                - { value: conference, label: "학회" }
+                - { value: talk, label: "발표·초청강연" }
+                - { value: seminar, label: "세미나" }
+                - { value: service, label: "학술활동 (편집위원 등)" }
+                - { value: grant, label: "연구과제" }
+                - { value: people, label: "연구실 (방문, 생일 등)" }
+                - { value: event, label: "행사" }
+          - name: title
+            label: "제목"
+            type: string
+            required: true
+          - name: body
+            label: "자세한 설명"
+            type: text
+          - name: photos
+            label: "사진 (여러 장 가능)"
+            description: "여러 장을 한 번에 올릴 수 있습니다. 첫 번째 사진이 목록의 대표 사진이 되고, 소식을 누르면 모든 사진이 보입니다."
+            type: image
+            options:
+              multiple: true
+          - name: image_url
+            label: "외부 사진 주소 (기존 구글 사이트 사진)"
+            description: "옛 구글 사이트 사진 주소입니다. 위 '사진'에 새로 올렸다면 이 칸은 지워도 됩니다."
+            type: string
+          - name: link
+            label: "관련 링크 (선택)"
+            type: string
 
   # ------------------------------------------------------------ 논문
   - name: publications
