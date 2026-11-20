@@ -21,8 +21,22 @@ items:
   - year: 2026
     date: 2026-10-26
     tag: conference
-    title: Smart Mobility Session at ACE Congress 2026
-    body: BARTS Lab organized a Smart Mobility session with five invited speakers.
+    title: Smart Mobility session, ACE Congress 2026 @Korea Univ.
+    body: "The BARTS Lab organized a session at the 2026 Future-Shaping ACE
+      Congress, hosted by the School of Architectural, Civil, and Environmental
+      (ACE) Engineering at Korea University (Oct 26, 2026). We welcomed
+      distinguished speakers who shared their latest research on emerging topics
+      in transportation and mobility: Prof. Sylvia He (The Chinese University of
+      Hong Kong), Prof. Prateek Bansal (National University of Singapore), Prof.
+      Baichuan Mo (Tsinghua University), Prof. Yuki Oyama (The University of
+      Tokyo), and Prof. Yunhan Zheng (Peking University). We also enjoyed
+      engaging discussions with the speakers."
+    photos:
+      - images/스크린샷 2026-11-20 오후 6.08.41.png
+      - images/스크린샷 2026-11-20 오후 6.09.18.png
+      - images/스크린샷 2026-11-20 오후 6.08.53.png
+      - images/스크린샷 2026-11-20 오후 6.09.03.png
+      - images/스크린샷 2026-11-20 오후 6.09.11.png
   - year: 2026
     date: 2026-10-19 ~ 23
     tag: conference
