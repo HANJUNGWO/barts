@@ -136,8 +136,20 @@ items:
   - year: 2026
     date: 2026-08-21
     tag: seminar
-    title: "International Seminar Series #26-3"
-    body: Seminar on transportation research in Japan.
+    title: International Seminar Series (#26-3) hosted by BARTS
+    body: 'The BARTS Lab hosted a seminar ("Transportation and Urban Research in
+      Japan: Emerging Topics and Perspectives") as part of its International
+      Seminar Series. Three Japanese scholars were invited: Prof. Tomoaki
+      Nakaishi of Kyushu Univ., Prof. Junya Kumagai of Fukuoka Univ., and Prof.
+      Giancarlos Parady of the Univ. of Tokyo. (Korea Univ., Aug. 21, 2026)'
+    photos:
+      - images/스크린샷 2026-11-20 오후 6.40.39.png
+      - images/스크린샷 2026-11-20 오후 6.42.56.png
+      - images/스크린샷 2026-11-20 오후 6.43.05.png
+      - images/스크린샷 2026-11-20 오후 6.43.09.png
+      - images/스크린샷 2026-11-20 오후 6.43.15.png
+      - images/스크린샷 2026-11-20 오후 6.43.21.png
+      - images/스크린샷 2026-11-20 오후 6.43.27.png
   - year: 2026
     date: 2026-08-10
     tag: seminar
