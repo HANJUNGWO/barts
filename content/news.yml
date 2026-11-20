@@ -10,9 +10,14 @@ items:
   - year: 2026
     date: 2026-10-29
     tag: award
-    title: Early Career Scientist Award — Fall Conference of the Korean Society for
-      Railway
-    body: Prof. Sung Hoo Kim received the Early Career Scientist Award.
+    title: The 2026 Fall Conference of Korea Society of Railway & Early Career
+      Scientist Award
+    body: "Prof. Sung Hoo Kim attended the 2026 Fall Conference of the Korean
+      Society for Railway, where he received the Early Career Scientist Award,
+      신진과학자상 (Jeju Phoenix Island, Oct. 29, 2026). [photo credit: 철도경제]"
+    photos:
+      - images/스크린샷 2026-11-20 오후 6.06.43.png
+      - images/스크린샷 2026-11-20 오후 6.07.20.png
   - year: 2026
     date: 2026-10-26
     tag: conference
