@@ -62,14 +62,44 @@ items:
   - year: 2026
     date: "2026"
     tag: talk
-    title: 2nd Seoul Urban AI Forum (Smart Life Week)
-    body: Prof. Kim gave a talk and joined the panel discussion.
+    title: The 2nd Seoul Urban AI Forum (Smart Life Week, Seoul)
+    body: Prof. Sung Hoo Kim was invited to speak at the 2nd Seoul Urban AI Forum,
+      hosted by the Seoul Metropolitan Government and organized by the Seoul AI
+      Foundation as part of Smart Life Week 2026. He presented recent research
+      on integrating mobile network, travel survey, and geospatial data using AI
+      to infer travel modes and improve origin–destination (O/D) estimation.
+      Following the session, he participated in a panel discussion alongside Dr.
+      Agnieszka Iwasiewicz-Wabnig (Univ. of Cambridge), Prof. Bilal Farooq
+      (Toronto Metropolitan University), Prof. Xiaopeng Li (Univ. of
+      Wisconsin–Madison), Prof. Jaekyoung Kim (Univ. of Seoul), Dr. Umberto
+      Fugiglando (MIT Senseable City Lab), and Prof. Thomas Schroepfer
+      (Singapore University of Technology and Design).
+    photos:
+      - images/스크린샷 2026-11-20 오후 6.16.41.png
+      - images/스크린샷 2026-11-20 오후 6.16.54.png
+      - images/스크린샷 2026-11-20 오후 6.16.48-1.png
+      - images/스크린샷 2026-11-20 오후 6.17.01.png
   - year: 2026
     date: 2026-07 ~ 09
     tag: people
-    title: Visiting Professor Giancarlos Parady
-    body: Prof. Giancarlos Parady visited BARTS Lab from July to September 2026.
-    image_url: https://sites.google.com/sitesv-images-rt/APXyLQflHs8PVPOTmcuFyXpwG2USoLkc1ax8z7MvxdAO8rH583DNaZ69ozrGYea0PjLmTZ_S7h0zgoOeUazM1TN-SS50T8DbnlJ17BtLU3LUXPETJ1fzOR6mgvOOpBJO2TXuF4UUllHBlZG5-DIsac8SKOoPlPaF4DEuTGSCKF-VuBOOUw1a4KcWbIg_CWymdttcydBMelvJtYugLsht-VQVm5SDuoXgzF7lG-uk-8gT=w1280
+    title: Visiting Professor Giancarlos Parady at the BARTS Lab
+    body: Prof. Sung Hoo Kim hosted Prof. Giancarlos Parady of the University of
+      Tokyo as a visiting professor from July to September 2026. During his
+      3-month stay at the BARTS Lab, we learned a great deal from him, explored
+      opportunities for future collaboration, and created many wonderful
+      memories together. Thank you for your time with us, and we hope to welcome
+      you back again soon!
+    photos:
+      - images/스크린샷 2026-11-20 오후 6.18.31.png
+      - images/스크린샷 2026-11-20 오후 6.18.38.png
+      - images/스크린샷 2026-11-20 오후 6.18.45.png
+      - images/스크린샷 2026-11-20 오후 6.18.50.png
+      - images/스크린샷 2026-11-20 오후 6.18.56.png
+      - images/스크린샷 2026-11-20 오후 6.19.04.png
+      - images/스크린샷 2026-11-20 오후 6.19.32.png
+      - images/스크린샷 2026-11-20 오후 6.19.10.png
+      - images/스크린샷 2026-11-20 오후 6.19.19.png
+      - images/스크린샷 2026-11-20 오후 6.19.26.png
   - year: 2026
     date: 2026-09-18
     tag: award
