@@ -52,7 +52,7 @@
   try {
     const [site, people, pubs, news] = await Promise.all(['site', 'people', 'publications', 'news'].map(load));
     D = { site, people, pubs,
-      news: (Array.isArray(news) ? news : []).map(n => {
+      news: (Array.isArray(news) ? news : (news.items || [])).map(n => {   // news.yml: 목록 그대로 또는 items: 아래 목록 둘 다 지원
         const imgs = [...(Array.isArray(n.photos) ? n.photos : n.photos ? [n.photos] : []), n.image, n.image_url].filter(Boolean);
         return { ...n, imgs, image: imgs[0] || '' };
       }) };
