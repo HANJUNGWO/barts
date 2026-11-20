@@ -54,7 +54,9 @@
     D = { site, people, pubs,
       news: (Array.isArray(news) ? news : (news.items || [])).map(n => {   // news.yml: 목록 그대로 또는 items: 아래 목록 둘 다 지원
         const imgs = [...(Array.isArray(n.photos) ? n.photos : n.photos ? [n.photos] : []), n.image, n.image_url].filter(Boolean);
-        return { ...n, imgs, image: imgs[0] || '' };
+        // 날짜가 따옴표 없이 저장되어 '날짜 값'으로 읽혀도 항상 2026-10-29 형태로 표시
+        const date = n.date instanceof Date ? n.date.toISOString().slice(0, 10) : (n.date == null ? '' : String(n.date));
+        return { ...n, date, imgs, image: imgs[0] || '' };
       }) };
     D.people.members ||= []; D.people.alumni ||= [];
   } catch (err) {
