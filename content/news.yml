@@ -13,281 +13,282 @@
 # =====================================================================
 
 # ------------------------------ 2026 ------------------------------
-- year: 2026
-  date: "2026-10-29"
-  tag: "award"
-  title: "Early Career Scientist Award — Fall Conference of the Korean Society for Railway"
-  body: "Prof. Sung Hoo Kim received the Early Career Scientist Award."
+items:
+  - year: 2026
+    date: "2026-10-29"
+    tag: "award"
+    title: "Early Career Scientist Award — Fall Conference of the Korean Society for Railway"
+    body: "Prof. Sung Hoo Kim received the Early Career Scientist Award."
 
-- year: 2026
-  date: "2026-10-26"
-  tag: "conference"
-  title: "Smart Mobility Session at ACE Congress 2026"
-  body: "BARTS Lab organized a Smart Mobility session with five invited speakers."
+  - year: 2026
+    date: "2026-10-26"
+    tag: "conference"
+    title: "Smart Mobility Session at ACE Congress 2026"
+    body: "BARTS Lab organized a Smart Mobility session with five invited speakers."
 
-- year: 2026
-  date: "2026-10-19 ~ 23"
-  tag: "conference"
-  title: "2026 ITS World Congress & joint lab retreat with SMOP Lab"
-  body: ""
+  - year: 2026
+    date: "2026-10-19 ~ 23"
+    tag: "conference"
+    title: "2026 ITS World Congress & joint lab retreat with SMOP Lab"
+    body: ""
 
-- year: 2026
-  date: "2026-10-16"
-  tag: "people"
-  title: "Happy birthday, Kihyun!"
-  body: ""
+  - year: 2026
+    date: "2026-10-16"
+    tag: "people"
+    title: "Happy birthday, Kihyun!"
+    body: ""
 
-- year: 2026
-  date: "2026"
-  tag: "talk"
-  title: "2nd Seoul Urban AI Forum (Smart Life Week)"
-  body: "Prof. Kim gave a talk and joined the panel discussion."
+  - year: 2026
+    date: "2026"
+    tag: "talk"
+    title: "2nd Seoul Urban AI Forum (Smart Life Week)"
+    body: "Prof. Kim gave a talk and joined the panel discussion."
 
-- year: 2026
-  date: "2026-07 ~ 09"
-  tag: "people"
-  title: "Visiting Professor Giancarlos Parady"
-  body: "Prof. Giancarlos Parady visited BARTS Lab from July to September 2026."
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQflHs8PVPOTmcuFyXpwG2USoLkc1ax8z7MvxdAO8rH583DNaZ69ozrGYea0PjLmTZ_S7h0zgoOeUazM1TN-SS50T8DbnlJ17BtLU3LUXPETJ1fzOR6mgvOOpBJO2TXuF4UUllHBlZG5-DIsac8SKOoPlPaF4DEuTGSCKF-VuBOOUw1a4KcWbIg_CWymdttcydBMelvJtYugLsht-VQVm5SDuoXgzF7lG-uk-8gT=w1280"
+  - year: 2026
+    date: "2026-07 ~ 09"
+    tag: "people"
+    title: "Visiting Professor Giancarlos Parady"
+    body: "Prof. Giancarlos Parady visited BARTS Lab from July to September 2026."
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQflHs8PVPOTmcuFyXpwG2USoLkc1ax8z7MvxdAO8rH583DNaZ69ozrGYea0PjLmTZ_S7h0zgoOeUazM1TN-SS50T8DbnlJ17BtLU3LUXPETJ1fzOR6mgvOOpBJO2TXuF4UUllHBlZG5-DIsac8SKOoPlPaF4DEuTGSCKF-VuBOOUw1a4KcWbIg_CWymdttcydBMelvJtYugLsht-VQVm5SDuoXgzF7lG-uk-8gT=w1280"
 
-- year: 2026
-  date: "2026-09-18"
-  tag: "award"
-  title: "Outstanding Paper Presentation Award — 95th KST Conference"
-  body: "Kihyun received the Outstanding Paper Presentation Award."
+  - year: 2026
+    date: "2026-09-18"
+    tag: "award"
+    title: "Outstanding Paper Presentation Award — 95th KST Conference"
+    body: "Kihyun received the Outstanding Paper Presentation Award."
 
-- year: 2026
-  date: "2026-09-17 ~ 19"
-  tag: "conference"
-  title: "95th KST Conference (Gangneung)"
-  body: ""
+  - year: 2026
+    date: "2026-09-17 ~ 19"
+    tag: "conference"
+    title: "95th KST Conference (Gangneung)"
+    body: ""
 
-- year: 2026
-  date: "2026-09-08"
-  tag: "conference"
-  title: "2026 Global Mobility Conference"
-  body: "Prof. Kim chaired a session."
+  - year: 2026
+    date: "2026-09-08"
+    tag: "conference"
+    title: "2026 Global Mobility Conference"
+    body: "Prof. Kim chaired a session."
 
-- year: 2026
-  date: "2026-08-21"
-  tag: "seminar"
-  title: "International Seminar Series #26-3"
-  body: "Seminar on transportation research in Japan."
+  - year: 2026
+    date: "2026-08-21"
+    tag: "seminar"
+    title: "International Seminar Series #26-3"
+    body: "Seminar on transportation research in Japan."
 
-- year: 2026
-  date: "2026-08-10"
-  tag: "seminar"
-  title: "International Seminar Series #26-2"
-  body: "Seminar on social networks and travel behavior."
+  - year: 2026
+    date: "2026-08-10"
+    tag: "seminar"
+    title: "International Seminar Series #26-2"
+    body: "Seminar on social networks and travel behavior."
 
-- year: 2026
-  date: "2026-06-29"
-  tag: "seminar"
-  title: "International Seminar Series #26-1 — Dr. Xinyi Wang (MIT)"
-  body: ""
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQdm-kRA1v0J4bxmRvtV1Dr-96Iyr9k-Eg_zYq30iPBNCCS0U-vig1Rx6WTdMV5DIGDdarZuxFFjiyI3GUZ_eJRscNFRtzNrRVnT3727nOQRvJ3YPUuwLaFwIjV3ty0pilt1jkVDEhKIgnUQg_WW_jVwDQWE07bLgjN9BhKdfcEbdXcNko3E0RgVHFobMo1TZXcdO-MxvkAuNgnDhc6blKuiCeYfkI5wBs5QfbyL=w1280"
+  - year: 2026
+    date: "2026-06-29"
+    tag: "seminar"
+    title: "International Seminar Series #26-1 — Dr. Xinyi Wang (MIT)"
+    body: ""
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQdm-kRA1v0J4bxmRvtV1Dr-96Iyr9k-Eg_zYq30iPBNCCS0U-vig1Rx6WTdMV5DIGDdarZuxFFjiyI3GUZ_eJRscNFRtzNrRVnT3727nOQRvJ3YPUuwLaFwIjV3ty0pilt1jkVDEhKIgnUQg_WW_jVwDQWE07bLgjN9BhKdfcEbdXcNko3E0RgVHFobMo1TZXcdO-MxvkAuNgnDhc6blKuiCeYfkI5wBs5QfbyL=w1280"
 
-- year: 2026
-  date: "2026"
-  tag: "service"
-  title: "Guest Editor, Transportation Research Part D & editorial paper"
-  body: "The special issue guest-edited by Prof. Kim has been concluded."
+  - year: 2026
+    date: "2026"
+    tag: "service"
+    title: "Guest Editor, Transportation Research Part D & editorial paper"
+    body: "The special issue guest-edited by Prof. Kim has been concluded."
 
-- year: 2026
-  date: "2026-07-06 ~ 10"
-  tag: "conference"
-  title: "WCTR 2026 (Toulouse, France)"
-  body: ""
+  - year: 2026
+    date: "2026-07-06 ~ 10"
+    tag: "conference"
+    title: "WCTR 2026 (Toulouse, France)"
+    body: ""
 
-- year: 2026
-  date: "2026-07-08 ~ 10"
-  tag: "conference"
-  title: "APTE 2026 (Jeju)"
-  body: ""
+  - year: 2026
+    date: "2026-07-08 ~ 10"
+    tag: "conference"
+    title: "APTE 2026 (Jeju)"
+    body: ""
 
-- year: 2026
-  date: "2026-06-07 ~ 11"
-  tag: "conference"
-  title: "WSTLUR 2026 (Beijing, China)"
-  body: ""
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQe38HkspmI-5d7XncIXeeBsrONhw3WwTdgv_2KO-vVgsHFvaMWlo3-504F1WVoR225PhlkrSTKJvTsCDlDpQmG78kNAGDh4a-mgADumK8sspS3Q8X89qIV1COGnjfWpk-oRuj78feBGKkf6xmSTo9L_98hzc2_Due4h9AbstFISgnWFlFXMbm1eF0ylFoAtwTOQWh45RRqkZkQiQvUyYgy_JxxeW6NMc1POQInS=w1280"
+  - year: 2026
+    date: "2026-06-07 ~ 11"
+    tag: "conference"
+    title: "WSTLUR 2026 (Beijing, China)"
+    body: ""
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQe38HkspmI-5d7XncIXeeBsrONhw3WwTdgv_2KO-vVgsHFvaMWlo3-504F1WVoR225PhlkrSTKJvTsCDlDpQmG78kNAGDh4a-mgADumK8sspS3Q8X89qIV1COGnjfWpk-oRuj78feBGKkf6xmSTo9L_98hzc2_Due4h9AbstFISgnWFlFXMbm1eF0ylFoAtwTOQWh45RRqkZkQiQvUyYgy_JxxeW6NMc1POQInS=w1280"
 
-- year: 2026
-  date: "2026"
-  tag: "service"
-  title: "Guest Editor, Multimodal Transportation"
-  body: "Prof. Kim started guest-editing a special issue."
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQcS9kf_L0AYnJrMW2cO2aFEW2-4ypbfX26VU0dB2BJJVMe9cedzPmdln92ZwWqF-H4YceX02q9zTRQZYw1e7uGJvvCAV1F8h6rtaT6AjBwnp4V1bfZyA8-yLTXp6Wyx9V7RXoEnJ8qFUIH_oD5HZl0FuFhprlBCrN5_Qv6kDWq_AWSaaJufmGBJ4ck6qoi-BUwpZ3A3AtwRO4eWu3u_jTHUVrEP9zqjHd2Y_odTFh4=w1280"
+  - year: 2026
+    date: "2026"
+    tag: "service"
+    title: "Guest Editor, Multimodal Transportation"
+    body: "Prof. Kim started guest-editing a special issue."
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQcS9kf_L0AYnJrMW2cO2aFEW2-4ypbfX26VU0dB2BJJVMe9cedzPmdln92ZwWqF-H4YceX02q9zTRQZYw1e7uGJvvCAV1F8h6rtaT6AjBwnp4V1bfZyA8-yLTXp6Wyx9V7RXoEnJ8qFUIH_oD5HZl0FuFhprlBCrN5_Qv6kDWq_AWSaaJufmGBJ4ck6qoi-BUwpZ3A3AtwRO4eWu3u_jTHUVrEP9zqjHd2Y_odTFh4=w1280"
 
-- year: 2026
-  date: "2026"
-  tag: "grant"
-  title: "MIT Global Seed Funds"
-  body: "Prof. Kim and MIT colleagues were awarded MIT Global Seed Funds."
+  - year: 2026
+    date: "2026"
+    tag: "grant"
+    title: "MIT Global Seed Funds"
+    body: "Prof. Kim and MIT colleagues were awarded MIT Global Seed Funds."
 
-- year: 2026
-  date: "2026-03"
-  tag: "conference"
-  title: "94th KST Conference (Gwangju)"
-  body: ""
+  - year: 2026
+    date: "2026-03"
+    tag: "conference"
+    title: "94th KST Conference (Gwangju)"
+    body: ""
 
-- year: 2026
-  date: "2026-01-11 ~ 15"
-  tag: "conference"
-  title: "TRB Annual Meeting 2026 (Washington, D.C.)"
-  body: ""
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQcZaq8KQr_3IyhQSbFvWut5xLFVqYr8se5_dV9kkGW76xPWlFuqjCZaZ9eX1BJUe1CUde1jMofWAjTkvxCAn5eHsDflznUInqLYJTjlMGhMY9ekQ7w9eNPkVlTvi7u8-phGolYd0YlbAoWNHdpAemxNVcHUEIN_j2lSK5f2LEaBNwG2Kbp5Ktlm2vkI1dbyKshHKUhWE8VHnOe1vpYr4PRr8ElDZPztLS7aHci5AoE=w1280"
+  - year: 2026
+    date: "2026-01-11 ~ 15"
+    tag: "conference"
+    title: "TRB Annual Meeting 2026 (Washington, D.C.)"
+    body: ""
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQcZaq8KQr_3IyhQSbFvWut5xLFVqYr8se5_dV9kkGW76xPWlFuqjCZaZ9eX1BJUe1CUde1jMofWAjTkvxCAn5eHsDflznUInqLYJTjlMGhMY9ekQ7w9eNPkVlTvi7u8-phGolYd0YlbAoWNHdpAemxNVcHUEIN_j2lSK5f2LEaBNwG2Kbp5Ktlm2vkI1dbyKshHKUhWE8VHnOe1vpYr4PRr8ElDZPztLS7aHci5AoE=w1280"
 
-- year: 2026
-  date: "2026"
-  tag: "service"
-  title: "Editorial Board Member, Travel Behaviour and Society"
-  body: ""
+  - year: 2026
+    date: "2026"
+    tag: "service"
+    title: "Editorial Board Member, Travel Behaviour and Society"
+    body: ""
 
-# ------------------------------ 2025 ------------------------------
-- year: 2025
-  date: "2025-10-30 ~ 31"
-  tag: "conference"
-  title: "2025 Fall K-ITS Conference (Jeju)"
-  body: ""
+  # ------------------------------ 2025 ------------------------------
+  - year: 2025
+    date: "2025-10-30 ~ 31"
+    tag: "conference"
+    title: "2025 Fall K-ITS Conference (Jeju)"
+    body: ""
 
-- year: 2025
-  date: "2025-10-29"
-  tag: "conference"
-  title: "12th International Public Transport Forum (Goyang)"
-  body: "Prof. Kim moderated a session."
+  - year: 2025
+    date: "2025-10-29"
+    tag: "conference"
+    title: "12th International Public Transport Forum (Goyang)"
+    body: "Prof. Kim moderated a session."
 
-- year: 2025
-  date: "2025-09-25 ~ 26"
-  tag: "conference"
-  title: "93rd KST Conference (Jeju)"
-  body: ""
+  - year: 2025
+    date: "2025-09-25 ~ 26"
+    tag: "conference"
+    title: "93rd KST Conference (Jeju)"
+    body: ""
 
-- year: 2025
-  date: "2025-09-10"
-  tag: "conference"
-  title: "2025 Global Mobility Conference"
-  body: "Prof. Kim moderated a session."
+  - year: 2025
+    date: "2025-09-10"
+    tag: "conference"
+    title: "2025 Global Mobility Conference"
+    body: "Prof. Kim moderated a session."
 
-- year: 2025
-  date: "2025-07-07"
-  tag: "talk"
-  title: "International seminar at the University of Tokyo"
-  body: ""
+  - year: 2025
+    date: "2025-07-07"
+    tag: "talk"
+    title: "International seminar at the University of Tokyo"
+    body: ""
 
-- year: 2025
-  date: "2025-06-30 ~ 07-02"
-  tag: "conference"
-  title: "3rd International Symposium on Cities and Sustainable Transportation (Xi'an, China)"
-  body: ""
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQdiQSWAPG0oyomXP7AB_ehtQCDVkl_s2reU8Cx5ARR0Qh0Vv7asDe4upw2LrpUD2mN2hj19EE3wHCcPEcftdNbAFmajffufV4HLplMCFH9vziRyjZiJyBI5sM_04criznAWNZ2u9dV5_ntrefAmTyIbLKPEc1D-ghsShyLU42qRT_hK-Nbublv76mcxP-r7eEPKtyBcCs8IwETHXD9S1gNu9sl90KCyGcIoDd2LGCg=w1280"
+  - year: 2025
+    date: "2025-06-30 ~ 07-02"
+    tag: "conference"
+    title: "3rd International Symposium on Cities and Sustainable Transportation (Xi'an, China)"
+    body: ""
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQdiQSWAPG0oyomXP7AB_ehtQCDVkl_s2reU8Cx5ARR0Qh0Vv7asDe4upw2LrpUD2mN2hj19EE3wHCcPEcftdNbAFmajffufV4HLplMCFH9vziRyjZiJyBI5sM_04criznAWNZ2u9dV5_ntrefAmTyIbLKPEc1D-ghsShyLU42qRT_hK-Nbublv76mcxP-r7eEPKtyBcCs8IwETHXD9S1gNu9sl90KCyGcIoDd2LGCg=w1280"
 
-- year: 2025
-  date: "2025-04-24 ~ 25"
-  tag: "conference"
-  title: "2025 Spring K-ITS Conference (Jeju)"
-  body: ""
+  - year: 2025
+    date: "2025-04-24 ~ 25"
+    tag: "conference"
+    title: "2025 Spring K-ITS Conference (Jeju)"
+    body: ""
 
-- year: 2025
-  date: "2025-03-24"
-  tag: "seminar"
-  title: "Invited talk by Prof. Jason Cao (Hongik University)"
-  body: ""
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQdxnCrutOsDpDQitjayhEs5pUJRI-JJo9pFgkbmeUvSShnUTN05tNUAfbejuxPaygP5eNTmAqo60Z12luf4crOLul_ragpeR8ZdVkKsnI4iTo41LaO0XpPsIPF6ECBNksHfZShWFMGu6sKgQ-_lHjFGxOaTqO-9sYUPWKwvi_LQ-OZ4MFR0g_C6dx-mMyBhzmJnWyY5kbUdPXkBuiw_6Qg4_EjvUOAPpU72ldnxdRY=w1280"
+  - year: 2025
+    date: "2025-03-24"
+    tag: "seminar"
+    title: "Invited talk by Prof. Jason Cao (Hongik University)"
+    body: ""
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQdxnCrutOsDpDQitjayhEs5pUJRI-JJo9pFgkbmeUvSShnUTN05tNUAfbejuxPaygP5eNTmAqo60Z12luf4crOLul_ragpeR8ZdVkKsnI4iTo41LaO0XpPsIPF6ECBNksHfZShWFMGu6sKgQ-_lHjFGxOaTqO-9sYUPWKwvi_LQ-OZ4MFR0g_C6dx-mMyBhzmJnWyY5kbUdPXkBuiw_6Qg4_EjvUOAPpU72ldnxdRY=w1280"
 
-- year: 2025
-  date: "2025-02-13 ~ 14"
-  tag: "conference"
-  title: "92nd KST Conference (Seoul)"
-  body: ""
+  - year: 2025
+    date: "2025-02-13 ~ 14"
+    tag: "conference"
+    title: "92nd KST Conference (Seoul)"
+    body: ""
 
-- year: 2025
-  date: "2025-01-05 ~ 09"
-  tag: "conference"
-  title: "TRB Annual Meeting 2025 (Washington, D.C.)"
-  body: ""
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQeNsXEerFGUqSXSEL-r76qk75D-avyGLeva4-s0PyIt0tzu8tdivydbRBieLw-UXtuuYLelpdG3TND0k8GOOZE1zCm0shNd7m60BS3YgZanosj-bSTlQaF9edxAOA2gh0MXm8NHU0hxYbU_EmLXmI6K3HI4QzkVe2Vg-7wvnO0scAmRk8IrecGJAlfkvjMjfxKbvdQ5asrbvDh_hkOkurdZzv7faLDhrUeHdQbymAU=w1280"
+  - year: 2025
+    date: "2025-01-05 ~ 09"
+    tag: "conference"
+    title: "TRB Annual Meeting 2025 (Washington, D.C.)"
+    body: ""
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQeNsXEerFGUqSXSEL-r76qk75D-avyGLeva4-s0PyIt0tzu8tdivydbRBieLw-UXtuuYLelpdG3TND0k8GOOZE1zCm0shNd7m60BS3YgZanosj-bSTlQaF9edxAOA2gh0MXm8NHU0hxYbU_EmLXmI6K3HI4QzkVe2Vg-7wvnO0scAmRk8IrecGJAlfkvjMjfxKbvdQ5asrbvDh_hkOkurdZzv7faLDhrUeHdQbymAU=w1280"
 
-# ------------------------------ 2024 ------------------------------
-- year: 2024
-  date: "2024-12-13"
-  tag: "conference"
-  title: "2024 Global Mobility Conference (Seoul)"
-  body: "Prof. Kim moderated a session."
+  # ------------------------------ 2024 ------------------------------
+  - year: 2024
+    date: "2024-12-13"
+    tag: "conference"
+    title: "2024 Global Mobility Conference (Seoul)"
+    body: "Prof. Kim moderated a session."
 
-- year: 2024
-  date: "2024-10-21"
-  tag: "seminar"
-  title: "Invited talk by Prof. Patricia Mokhtarian (Seoul)"
-  body: ""
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQfm1B4DUINE-n1-m9iYuVlEmu5pnLexD2i4eRzI9DYxnCavYC-QL6zCcG5Lap9NV4UXVFZ36vK-8hz5Xemr6ky5aGE9b62XGbfX8rsbm3rcIHAe3GJ2eg3M1UbYbZDzGSPqCsRTqznxBi7mOQ3EaPM5cA9duZ6aSBRU6ReJ6lcGlYiTgNdnUOVre1wf8mqGjuIPTLf0RaSK6tSrXT7umuTCCMNLvNDtj3frRRfVzvk=w1280"
+  - year: 2024
+    date: "2024-10-21"
+    tag: "seminar"
+    title: "Invited talk by Prof. Patricia Mokhtarian (Seoul)"
+    body: ""
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQfm1B4DUINE-n1-m9iYuVlEmu5pnLexD2i4eRzI9DYxnCavYC-QL6zCcG5Lap9NV4UXVFZ36vK-8hz5Xemr6ky5aGE9b62XGbfX8rsbm3rcIHAe3GJ2eg3M1UbYbZDzGSPqCsRTqznxBi7mOQ3EaPM5cA9duZ6aSBRU6ReJ6lcGlYiTgNdnUOVre1wf8mqGjuIPTLf0RaSK6tSrXT7umuTCCMNLvNDtj3frRRfVzvk=w1280"
 
-- year: 2024
-  date: "2024-09-26 ~ 27"
-  tag: "conference"
-  title: "91st KST Conference (Gangneung)"
-  body: ""
+  - year: 2024
+    date: "2024-09-26 ~ 27"
+    tag: "conference"
+    title: "91st KST Conference (Gangneung)"
+    body: ""
 
-- year: 2024
-  date: "2024-07-14 ~ 18"
-  tag: "conference"
-  title: "IATBR 2024 (Vienna, Austria)"
-  body: "Prof. Kim gave two presentations."
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQdoQJLH2p9mUsXzpWzwDcvvXXLP358vB1Kesmgl0JorGypg0u0OF7xqmuLr3eqwvaToqvHMPKTb7KdQPhqYe-cYEYP-sc5o46JOddzHUEsJP416xyEbdLUefKtkUUvuzSTkEvnYuuCJ5CwDL8iTMA0lbEOhQd56C4ZQ0Z_eoamokRl7vmo7rLrKtoJ69QF6YmvpfFXLaExreyMNwCaXJXKzvii2WeeJKYk_RaiFqIk=w1280"
+  - year: 2024
+    date: "2024-07-14 ~ 18"
+    tag: "conference"
+    title: "IATBR 2024 (Vienna, Austria)"
+    body: "Prof. Kim gave two presentations."
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQdoQJLH2p9mUsXzpWzwDcvvXXLP358vB1Kesmgl0JorGypg0u0OF7xqmuLr3eqwvaToqvHMPKTb7KdQPhqYe-cYEYP-sc5o46JOddzHUEsJP416xyEbdLUefKtkUUvuzSTkEvnYuuCJ5CwDL8iTMA0lbEOhQd56C4ZQ0Z_eoamokRl7vmo7rLrKtoJ69QF6YmvpfFXLaExreyMNwCaXJXKzvii2WeeJKYk_RaiFqIk=w1280"
 
-- year: 2024
-  date: "2024"
-  tag: "talk"
-  title: "2nd International Symposium on Cities and Sustainable Transportation (Xi'an, China)"
-  body: "Prof. Kim was invited to the symposium."
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQcW3TiXlvdkdi5RYsaN0CjOOVM8JUQFSDxZtLLNQrjEFno5XXrCVbaRaDQQJFoSwi3PgR3YTyn4zZT-LKG0VHW1r10xlCeFy9AO8A60j_HiuTme5je1DAgQzvNGatMBdTb99dO1VfQ1JT_icDuo1fXUkgV9kz_PWBIFqL1J8gBr0rYKJrV7MaNuj2rUGB0aKgQ1xDJDvBvmo1LzousBqWSOFZ5EgAdSTU-w=w1280"
+  - year: 2024
+    date: "2024"
+    tag: "talk"
+    title: "2nd International Symposium on Cities and Sustainable Transportation (Xi'an, China)"
+    body: "Prof. Kim was invited to the symposium."
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQcW3TiXlvdkdi5RYsaN0CjOOVM8JUQFSDxZtLLNQrjEFno5XXrCVbaRaDQQJFoSwi3PgR3YTyn4zZT-LKG0VHW1r10xlCeFy9AO8A60j_HiuTme5je1DAgQzvNGatMBdTb99dO1VfQ1JT_icDuo1fXUkgV9kz_PWBIFqL1J8gBr0rYKJrV7MaNuj2rUGB0aKgQ1xDJDvBvmo1LzousBqWSOFZ5EgAdSTU-w=w1280"
 
-- year: 2024
-  date: "2024-03-27 ~ 28"
-  tag: "conference"
-  title: "90th KST Conference (Seoul)"
-  body: ""
+  - year: 2024
+    date: "2024-03-27 ~ 28"
+    tag: "conference"
+    title: "90th KST Conference (Seoul)"
+    body: ""
 
-- year: 2024
-  date: "2024-01"
-  tag: "award"
-  title: "Best Paper Award at TRB 2024"
-  body: "Prof. Kim received a Best Paper Award for a paper on ICT and travel choices."
+  - year: 2024
+    date: "2024-01"
+    tag: "award"
+    title: "Best Paper Award at TRB 2024"
+    body: "Prof. Kim received a Best Paper Award for a paper on ICT and travel choices."
 
-- year: 2024
-  date: "2024-01-08 ~ 11"
-  tag: "conference"
-  title: "TRB Annual Meeting 2024 (Washington, D.C.)"
-  body: ""
+  - year: 2024
+    date: "2024-01-08 ~ 11"
+    tag: "conference"
+    title: "TRB Annual Meeting 2024 (Washington, D.C.)"
+    body: ""
 
-# ------------------------------ 2023 ------------------------------
-- year: 2023
-  date: "2023"
-  tag: "award"
-  title: "1st place — 1st Metropolitan Regional Transportation Innovation Contest"
-  body: "BARTS Lab won first place."
+  # ------------------------------ 2023 ------------------------------
+  - year: 2023
+    date: "2023"
+    tag: "award"
+    title: "1st place — 1st Metropolitan Regional Transportation Innovation Contest"
+    body: "BARTS Lab won first place."
 
-- year: 2023
-  date: "2023-10-10"
-  tag: "conference"
-  title: "11th International Public Transport Forum (Busan)"
-  body: "Prof. Kim moderated a session."
+  - year: 2023
+    date: "2023-10-10"
+    tag: "conference"
+    title: "11th International Public Transport Forum (Busan)"
+    body: "Prof. Kim moderated a session."
 
-- year: 2023
-  date: "2023-10-11 ~ 12"
-  tag: "conference"
-  title: "89th KST Conference (Busan)"
-  body: ""
-  image_url: "https://sites.google.com/sitesv-images-rt/APXyLQcDyaaLgcsiyWENjHaYgIF8dfo56Ga-dBp8gvcyttwteduXBDKE2ef1rKaaMSbUB7DDb5Qpkzq9-XwSJOyB4SMjmzYfi_5V8MkqF5BBQaqWvEHoVlBp-Wadk8X60rLpv8Jxr0kbNDYgPqMb7CQ_qqJxlSukNNdvq4glsFL36JwFchKyK56CnRcURmbNuj462cntU3rk44aUgmw7Vxd1I3HUAb9DaUbYEQ6Kb0bRqgQ=w1280"
+  - year: 2023
+    date: "2023-10-11 ~ 12"
+    tag: "conference"
+    title: "89th KST Conference (Busan)"
+    body: ""
+    image_url: "https://sites.google.com/sitesv-images-rt/APXyLQcDyaaLgcsiyWENjHaYgIF8dfo56Ga-dBp8gvcyttwteduXBDKE2ef1rKaaMSbUB7DDb5Qpkzq9-XwSJOyB4SMjmzYfi_5V8MkqF5BBQaqWvEHoVlBp-Wadk8X60rLpv8Jxr0kbNDYgPqMb7CQ_qqJxlSukNNdvq4glsFL36JwFchKyK56CnRcURmbNuj462cntU3rk44aUgmw7Vxd1I3HUAb9DaUbYEQ6Kb0bRqgQ=w1280"
 
-- year: 2023
-  date: "2023-02-23 ~ 24"
-  tag: "conference"
-  title: "88th KST Conference (Seoul)"
-  body: ""
+  - year: 2023
+    date: "2023-02-23 ~ 24"
+    tag: "conference"
+    title: "88th KST Conference (Seoul)"
+    body: ""
 
-- year: 2023
-  date: "2023-01-08 ~ 12"
-  tag: "conference"
-  title: "TRB Annual Meeting 2023 (Washington, D.C.)"
-  body: ""
+  - year: 2023
+    date: "2023-01-08 ~ 12"
+    tag: "conference"
+    title: "TRB Annual Meeting 2023 (Washington, D.C.)"
+    body: ""
