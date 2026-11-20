@@ -103,8 +103,11 @@ items:
   - year: 2026
     date: 2026-09-18
     tag: award
-    title: Outstanding Paper Presentation Award — 95th KST Conference
-    body: Kihyun received the Outstanding Paper Presentation Award.
+    title: Outstanding Paper Presentation Award (The 95th KST Conference)
+    body: Kiyhun received the Outstanding Paper Presentation Award (Setp. 18, 2026).
+      Congratulations!
+    photos:
+      - images/스크린샷 2026-11-20 오후 6.22.57.png
   - year: 2026
     date: 2026-09-17 ~ 19
     tag: conference
