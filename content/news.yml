@@ -54,7 +54,11 @@ items:
   - year: 2026
     date: 2026-10-16
     tag: people
-    title: Happy birthday, Kihyun!
+    title: Kihyun's Birthday
+    body: Happy birthday to Kihyun! (Oct. 16, 2026)
+    photos:
+      - images/스크린샷 2026-11-20 오후 6.14.20.png
+      - images/스크린샷 2026-11-20 오후 6.14.29.png
   - year: 2026
     date: "2026"
     tag: talk
