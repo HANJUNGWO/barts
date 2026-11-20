@@ -59,6 +59,9 @@
         return { ...n, date, imgs, image: imgs[0] || '' };
       }) };
     D.people.members ||= []; D.people.alumni ||= [];
+    // 소식은 날짜 최신순으로 자동 정렬 (관리자 화면에서 순서를 끌어 올릴 필요 없음)
+    const dkey = d => { const m = String(d).match(/^(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?/); return m ? (+m[1]) * 10000 + (+(m[2] || 0)) * 100 + (+(m[3] || 0)) : 0; };
+    D.news = D.news.map((n, i) => ({ ...n, _i: i })).sort((x, y) => dkey(y.date) - dkey(x.date) || x._i - y._i);
   } catch (err) {
     const box = document.createElement('div');
     box.className = 'load-error wrap';
