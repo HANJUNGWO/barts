@@ -170,8 +170,13 @@ items:
   - year: 2026
     date: "2026"
     tag: service
-    title: Guest Editor, Transportation Research Part D & editorial paper
-    body: The special issue guest-edited by Prof. Kim has been concluded.
+    title: Guest Editor at TR Part D & Editorial Paper
+    body: Prof. Sung Hoo Kim served as a Guest Editor for the special issue,
+      "Evolving Connections Between Land Use and Emerging Mobilities", in
+      Transportation Research Part D. The special issue has now concluded, and
+      the editorial has been published.
+    photos:
+      - images/스크린샷 2026-11-21 오후 12.45.31.png
   - year: 2026
     date: 2026-07-06 ~ 10
     tag: conference
