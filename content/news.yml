@@ -165,8 +165,16 @@ items:
   - year: 2026
     date: 2026-06-29
     tag: seminar
-    title: "International Seminar Series #26-1 — Dr. Xinyi Wang (MIT)"
-    image_url: https://sites.google.com/sitesv-images-rt/APXyLQdm-kRA1v0J4bxmRvtV1Dr-96Iyr9k-Eg_zYq30iPBNCCS0U-vig1Rx6WTdMV5DIGDdarZuxFFjiyI3GUZ_eJRscNFRtzNrRVnT3727nOQRvJ3YPUuwLaFwIjV3ty0pilt1jkVDEhKIgnUQg_WW_jVwDQWE07bLgjN9BhKdfcEbdXcNko3E0RgVHFobMo1TZXcdO-MxvkAuNgnDhc6blKuiCeYfkI5wBs5QfbyL=w1280
+    title: International Seminar Series (#26-1) hosted by BARTS
+    body: 'The BARTS Lab hosted a seminar ("From Teleworking Typologies to Ordered
+      Probit Switching Regression: Understanding Heterogeneous Effects in Travel
+      Behavior Research") as part of its International Seminar Series. Dr. Xinyi
+      Wang of MIT was invited. (Korea Univ., June 29, 2026)'
+    photos:
+      - images/스크린샷 2026-11-21 오후 12.48.09.png
+      - images/스크린샷 2026-11-21 오후 12.48.14.png
+      - images/스크린샷 2026-11-21 오후 12.48.20.png
+      - images/스크린샷 2026-11-21 오후 12.48.26.png
   - year: 2026
     date: "2026"
     tag: service
