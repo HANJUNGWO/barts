@@ -175,7 +175,14 @@ items:
   - year: 2026
     date: 2026-07-06 ~ 10
     tag: conference
-    title: WCTR 2026 (Toulouse, France)
+    title: The World Conference on Transport Research (WCTR) 2026
+    body: Prof. Sung Hoo Kim attended the World Conference on Transport Research
+      (WCTR) 2026 in Toulouse, France (July 6-10, 2026).
+    photos:
+      - images/스크린샷 2026-11-21 오후 12.42.14.png
+      - images/스크린샷 2026-11-21 오후 12.42.21.png
+      - images/스크린샷 2026-11-21 오후 12.42.26.png
+      - images/스크린샷 2026-11-21 오후 12.42.31.png
   - year: 2026
     date: 2026-07-08 ~ 10
     tag: conference
